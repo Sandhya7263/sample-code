@@ -173,7 +173,7 @@ $('#log_comment_attachments').fileupload({
 }
 
 
-//Tree Structure for blogs based on category and subcategory if clicl on category all blogs belongs to that category will show in tree status also same as for subcategories
+//Tree Structure for blogs based on category
 
  $('body').on('click', '.sign a', function(e){
         e.preventDefault();
