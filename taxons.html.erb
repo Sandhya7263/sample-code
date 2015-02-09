@@ -1,0 +1,42 @@
+<div id="add-line-item" data-hook>
+  <fieldset class="no-border-bottom">
+    <legend align="center"><%= Spree.t(:add_product) %></legend>
+    <% if try_spree_current_user.admin? %>
+      <div class="field">
+        <%= label_tag nil, Spree.t(:store) %>
+        <%= select_tag :store_id, options_for_select(Spree::Store.all.collect {|s| [s.name, s.id ]}), :prompt => "Select Store", :class => 'select2', :id => "store_select"%>
+        <%=  hidden_field_tag :order_id, @order.id  %>
+      </div>
+    <% end %>
+    <div data-hook="add_product_name" class="field twelve columns alpha">
+      <%= label_tag :add_variant_id, Spree.t(:name_or_sku) %>
+      <%= hidden_field_tag :add_variant_id, "", :class => "orders_variant_autocomplete fullwidth" %>
+    </div>
+  </fieldset>
+  <div id="stock_details"></div>
+</div>
+
+
+
+<script type = "text/javascript">
+
+    $(function () {
+        $(".orders_variant_autocomplete").ordersvariantAutocomplete(<%= @order.store_id %>);
+      });
+
+  $(function () {
+    $('#store_select').change(function(){
+      var item = $(this).val();
+      var values="order_id=" + <%= @order.id %> + "&store_id=" + item;
+      $.ajax({
+        url: '/admin/orders/add_store',
+        type: 'GET',
+        data: values
+      });
+       $(".orders_variant_autocomplete").ordersvariantAutocomplete(item);
+    });
+  });
+</script>
+
+
+
