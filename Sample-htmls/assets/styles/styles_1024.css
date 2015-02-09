@@ -1,0 +1,612 @@
+@charset "utf-8";
+/* CSS Document */
+.main-wrapper-fixed {
+	padding: 0 1%;
+	width: 98%;
+}
+body
+{
+background-color:#DCDFD8 !important;
+background-image:none !important;
+}
+.navi-menu	
+	{
+	padding-top:5px;
+	padding-bottom:5px;
+	border-bottom:solid 1px #fff;
+	border-top:solid 1px #fff;
+	margin-top:50px !important;
+	}
+
+.navi-menu a
+{
+	line-height:35px;
+}
+
+
+.logomenu {
+    border: medium none;
+    margin-right: 6px;
+    margin-top: 0 !important;
+    padding: 0 30px;
+}
+
+.pilates_menu
+{
+	position:static;
+}
+.pilates_li
+{
+	
+	width:100%;
+}
+.fadewrapper
+{
+	width:100%;
+	display:block;
+	position:static;
+	margin:0;
+	/*border-bottom:solid 1px gray;
+	margin-bottom:10px;*/
+	
+}
+.pilates_menu_inner
+{
+	float:left;
+	width:100%;
+}
+.fadewrapperinner
+{
+	width:96%;
+	padding:0 2%;
+}
+
+.pilates_menu {
+	margin-top: 14px;
+	padding: 0 2%;
+	width: 96%;
+}
+	
+.pilates_li a.common_home_bottom_anchor {
+    background: url("../images/pilates.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+}
+
+/* retreats page **/
+
+.retreats_image
+{
+	width:100%;
+}
+.retreats_content_right
+{
+	width:100%;
+}
+
+
+.retreats_pilates_menu
+{
+	width:98%;
+}
+
+.retreats_box_inner
+{
+	padding:20px 17px 20px 17px;
+}
+
+
+.videos_all
+{
+	display:block;
+}
+
+.videos_all_inner
+{
+	width:47%;
+}
+
+#carousel
+{
+	display:none;
+}
+.navigation_paretrelative
+{
+	display:none;
+}
+.filter_ul li a
+{
+	width:99%;
+}
+
+.filter_div_inner
+{
+	width:95%;
+}
+
+.filterinsid
+{
+	width:95%;
+	text-align:center;
+}
+
+
+.who_we_are_right img
+	{
+		width:100%;
+		height:100%;
+	}
+
+
+
+@media (max-width: 1024px) {
+	
+	
+	.navi-menu a	
+	{	
+	font-size:15px;		
+	}
+	
+.navi-menu
+	{
+		padding-left:15px ;
+		padding-right:15px ;
+	}
+
+		
+	.aboutcarosl .mask
+	{
+	width:100%;
+	}
+	
+	.meet_our_team_slider .carousel ul li
+	{
+	width:177px;
+	margin-right:10px;
+	height:auto;
+	}
+	.meet_our_team_slider .carousel ul li img
+	{
+	width:100%;
+	height:100%;
+	}
+	
+	.pilates_instructorrslider  li.slide 
+	{
+		width:177px;
+		margin-right:10px;
+		height:auto;
+	}
+	
+}
+
+@media (max-width: 975px) {
+
+.meet_our_team_slider .carousel ul li
+{
+width:160px;
+}
+.navi-menu a	
+	{	
+	font-size:14px;		
+	}
+	
+.navi-menu
+	{
+		padding-left:14px ;
+		padding-right:14px ;
+	}
+
+}
+@media (max-width: 925px) {
+	
+	.navi-menu a	
+	{	
+	font-size:14px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:13px ;
+		padding-right:13px ;
+	}
+	
+	.aboutcarosl .mask
+	{
+	width:100%;
+	}
+	
+	.meet_our_team_slider .carousel ul li
+	{
+	width:155px;
+	margin-right:10px;
+	height:auto;
+	}
+	.meet_our_team_slider .carousel ul li img
+	{
+	width:100%;
+	height:100%;
+	}
+	.pilates_instructorrslider  li.slide 
+	{
+		width:155px;
+		margin-right:10px;
+		height:auto;
+	}
+	
+}
+
+
+
+@media (max-width: 900px) {
+	#aboutus_video
+	{
+		width:450px !important;
+		/*height:600px;*/
+		height:362px;
+	}
+
+	.navi-menu a	
+	{	
+	font-size:13px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:13px ;
+		padding-right:13px ;
+	}
+	
+.meet_our_team_slider .carousel ul li
+	{
+	width:145px;
+	}
+	
+	.pilates_instructorrslider  li.slide 
+	{
+		width:145px;
+		
+	}
+	
+}
+
+@media (max-width: 870px) {
+	.instructor_left
+	{
+		width:100%;
+		text-align:left;
+	}
+	.instructor_left_image
+	{
+		width:100%;
+		text-align:center;
+	}
+	.instructor_right
+	{
+		width:90%;
+	}
+	.instructor_right .pilates_instructorrslider li.slide
+	{
+		width:200px !important;
+	}
+	
+	.navi-menu a	
+	{	
+	font-size:13px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:12px ;
+		padding-right:12px ;
+	}
+	.meet_our_team_slider .carousel ul li
+	{
+	width:140px;
+	}
+	.pilates_instructorrslider  li.slide 
+	{
+		width:140px;
+		
+	}
+
+}
+
+
+@media (max-width: 840px) {
+	.navi-menu a	
+	{	
+	font-size:14px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:10px ;
+		padding-right:10px ;
+	}
+	
+	.meet_our_team_slider .carousel ul li
+	{
+	width:130px;
+	}
+	.pilates_instructorrslider  li.slide 
+	{
+		width:130px;
+		
+	}
+	
+}
+
+@media (max-width: 820px) {
+	.navi-menu a	
+	{	
+	font-size:13px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:8px ;
+		padding-right:8px ;
+	}
+	.meet_our_team_slider .carousel ul li
+	{
+	width:120px;
+	}
+	.text_slide_about h3
+	{
+	font-size:15px;
+	}
+	.text_slide_about p
+	{
+	font-size:11px;
+	}
+	
+	.pilates_instructorrslider  li.slide 
+	{
+		width:120px;		
+	}
+	.text_instructors h3
+	{
+	font-size:15px;
+	}
+	
+}
+@media (max-width: 775px) {
+	.navi-menu a	
+	{	
+	font-size:13px;		
+	}
+	.navi-menu
+	{
+		padding-left:8px ;
+		padding-right:8px ;
+	}
+	
+	.meet_our_team_slider .carousel ul li
+	{
+	width:115px;
+	}
+	.text_slide_about h3
+	{
+	font-size:15px;
+	}
+	.text_slide_about p
+	{
+	font-size:11px;
+	}
+	
+	.pilates_instructorrslider  li.slide 
+	{
+		width:115px;		
+	}
+	.text_instructors h3
+	{
+	font-size:15px;
+	}
+}
+
+@media (max-width: 750px) {
+	
+	.navi-menu a	
+	{	
+	font-size:13px;		
+	}
+	.navi-menu
+	{
+		padding-left:7px ;
+		padding-right:7px ;
+	}
+	.meet_our_team_slider .carousel ul li
+	{
+	width:115px;
+	}
+	.text_slide_about h3
+	{
+	font-size:15px;
+	}
+	.text_slide_about p
+	{
+	font-size:11px;
+	}
+	
+	.pilates_instructorrslider  li.slide 
+	{
+		width:115px;		
+	}
+	
+	
+	
+}
+
+@media (max-width: 730px) {
+	.pilates_instructorrslider  li.slide  img
+	{
+	text-align:center;
+	 width: 80%;
+    height: auto;
+	}
+	
+	.navi-menu a	
+	{	
+	font-size:12px;		
+	}
+	.navi-menu
+	{
+		padding-left:7px ;
+		padding-right:7px ;
+	}
+	}
+
+@media (max-width: 700px) {
+	
+	
+	
+	.navi-menu a	
+	{	
+	font-size:12px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:6px ;
+		padding-right:6px ;
+	}
+	
+	
+	.who_we_are_text,.who_we_are_list
+	{
+	font-size:11px;
+	}
+	.meet_our_team_slider .carousel ul li
+	{
+	width:90px;
+	}
+	.text_slide_about h3
+	{
+	font-size:12px;
+	}
+	.text_slide_about p
+	{
+	font-size:09px;
+	}
+	.pilates_instructorrslider  li.slide 
+	{
+		width:80px;		
+	}
+	
+	
+	.text_instructors .readmoree a {
+		font-size: 10px;
+		padding: 5px 9px !important;
+	}
+	
+}
+
+
+
+
+@media (max-width: 680px) {
+
+	.navi-menu
+	{
+		padding-left:4px ;
+		padding-right:4px ;
+	}
+	
+	.who_we_are_text,.who_we_are_list
+	{
+	font-size:11px;
+	}
+	.meet_our_team_slider .carousel ul li
+	{
+	width:80px;
+	}
+	
+	.pilates_instructorrslider  li.slide 
+	{
+		width:80px !important;		
+	}
+	
+	
+	.text_instructors .readmoree a {
+		font-size: 10px;
+		padding: 5px 9px !important;
+	}
+}
+
+
+@media (max-width: 650px) {
+	.navi-menu a	
+	{	
+	font-size:12px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:3px ;
+		padding-right:3px ;
+	}
+	
+	
+	.who_we_are_text,.who_we_are_list
+	{
+	font-size:11px;
+	}
+	.meet_our_team_slider .carousel ul li
+	{
+	width:80px;
+	}
+	
+	.pilates_instructorrslider  li.slide 
+	{
+		width:80px !important;		
+	}
+	
+	
+	.text_instructors .readmoree a {
+		font-size: 10px;
+		padding: 5px 9px !important;
+	}
+}
+
+@media (max-width: 630px) {
+	
+
+	
+	.navi-menu a	
+	{	
+	font-size:12px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:2px ;
+		padding-right:2px ;
+	}
+	
+	
+	.responsive-slider .slides ul li .slide-body .caption.header
+	{
+		right:4%;
+	}
+}
+
+
+@media (max-width: 620px) {
+	
+
+	
+	.navi-menu a	
+	{	
+	font-size:11px;		
+	}
+	
+	.navi-menu
+	{
+		padding-left:2px ;
+		padding-right:2px ;
+	}
+	
+	
+	
+}
+
+

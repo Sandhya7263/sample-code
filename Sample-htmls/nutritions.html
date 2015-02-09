@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="LilyFit" />
+<meta name="description" content="LilyFit" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>LilyFit</title>
+<meta name="viewport" content="width=device-width" />
+ 
+
+<link rel="shortcut icon" href="common/images/favicon.ico" />
+<link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/animation.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/style_menumouseover.css" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="assets/styles/rcarousel_nutritrions.css"/>
+
+<!-- for video css -->
+ <link href="assets/styles/video-js.css" rel="stylesheet" type="text/css">
+ <!-- for video css -->
+ 
+
+
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="assets/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 600px)" href="assets/styles/styles_480.css" />
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)" href="assets/styles/styles_480.css" />
+
+
+</head>
+
+<body >
+
+	<div class="main-wrapper">
+    <div class="width_show"></div>
+	
+	<div class="slider-outer-wrap">
+	        <div class="slider-wrapper">
+            <div class="header_wrapper header_wrapper_inside">
+        	<div class="main-wrapper-fixed headerdiv">
+            	 <div class="header-left floatleft showonlyonmob"> 
+                     <a href="index.html">
+                     	<img title="VLC" id="logo" alt="Logo LilyFit" src="assets/images/lilyfit_logo.png"> 
+                     </a> 
+                 </div> 
+                 
+                 <div class="login_signup">	 
+            	<div class="login_button">
+ 		              <span class="login_span"> 
+                      <a  href="login.html" class="login_button_anchor loginsignupclass changelogintext"> 
+                       
+                      </a>
+                      </span>
+                 </div> 
+                 <div class="signup_button" style="display:none;">
+ 		              <span class="signup_span"> 
+                      <a href="signup.html" class="login_button_anchor loginsignupclass"> 
+                      Signup
+                      </a></span>
+                 </div>
+                 
+                 <!--<div class="signup_button">
+ 		              <span class="signup_span"> <a href="login.html" class="signup_button_anchor"> <img src="assets/images/login.jpg" alt="login"/></a></span>
+                 </div> -->
+                 
+                   </div>
+                   
+                 <div class="floatleftt"> 
+                 
+                  
+                        <div class="menu_top header-left">
+                        	<div class="menutoggle"> MENU </div>
+                            <ul class="menu_ulist">
+                               <li class="menuu1 navi-menu paddinganchor "><a href="aboutus.html"> <span> About </span> </a>                                                               
+                               </li>
+                               <li class="menuu2 navi-menu paddinganchor classesmenu"><a href="javascript:void(0)"> <span> Classes </span> </a>                                
+                               
+                               <div class="header-submenu-wrap">
+                                
+                                     <div class="demo">
+                                        <div id="capslide_img_cont1" class="ic_container">
+                                            <img src="assets/images/menu/Pilates.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PILATES</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Pilates1</a></li>
+                                                    <li> <a href="#"> Pilates2</a></li>
+                                                    <li> <a href="#"> Pilates3</a></li>
+                                                    <li> <a href="#"> Pilates4</a></li>
+                                                    <li> <a href="#"> Pilates5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demo">
+                                        <div id="capslide_img_cont2" class="ic_container">
+                                            <img src="assets/images/menu/Yoga.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>YOGA</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Yoga1</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont3" class="ic_container">
+                                            <img src="assets/images/menu/Boady_Toning.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                               <h3>BODY TONNIN  <br/> & DANCE</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont4" class="ic_container">
+                                            <img src="assets/images/menu/Pre_PostNatal.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRENATAL</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont5" class="ic_container">
+                                            <img src="assets/images/menu/Pilates.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>Private & Corporate Sessions</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Yoga1</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demolast">
+										<h2> Classes</h2> 
+                                        <p> <a href="javascript:void(0)"> Pilates</a></p>
+                                          <p> <a href="javascript:void(0)"> Yoga</a>  </p>
+                                          <p>  <a href="javascript:void(0)"> Body Tonning & Dance </a> </p> 
+                                           <p> <a href="javascript:void(0)"> Prenatal</a>  </p>    
+                                           <p> <a href="javascript:void(0)"> Private & <br/> Corporate Sessions </a>  </p>                       
+                                      
+                                      </div>
+                                    
+                               </div>
+                               </li>
+                               <li class="menuu3 navi-menu paddinganchor"><a href="instructors.html"> <span> Instructors </span> </a>  </li>
+                               <li class="menuu4 navi-menu paddinganchor"><a href="retreats.html"> <span> Blog </span> </a>  </li>
+                               
+                               <li class="navi-menu logomenu "> <a href="index.html"><img alt="Logo" src="assets/images/lilyfit_logo.png" /></a>   </li>
+                               <li class="menuu5 navi-menu paddinganchor">  <a href="workshops.html"><span>Workshops</span> </a>  </li>
+                               <li class="menuu6 navi-menu paddinganchor"> <a href="retreats.html"><span> Retreats  </span> </a></li>
+                               <li class="menuu7 navi-menu paddinganchor activeclasss"><a href="nutritions.html"> <span> Nutrition </span> </a>  </li>
+                                <li class="shopmenu navi-menu paddinganchor menulast">  <a href="javascript:void(0)"><span> Shop </span></a> </li>                       
+                            </ul>
+                         </div>   
+                 </div>  
+                 
+            </div>	 
+            	      
+        </div>
+        	
+        	</div>
+        	
+        	</div>
+		
+		<div class="mainContent_wrapper">
+        	<div class="main-wrapper-fixed ">
+            	
+                <div class="nutrition_page">
+                
+                <div class="breadcrumb_navigation">
+                	<ul class="breadcrums-wrapper-list">
+                    <li class="breadcrums-first">
+                        <a href="index.html">Home</a>
+                    </li>
+                     <li>
+                        <span>Nutrition</span>
+                    </li>
+
+            		</ul>
+                </div>
+                
+                <div class="page_title">
+                	<h3>Nutrition</h3>
+                    
+                </div>
+                
+                <div class="who_we_are nutrition">
+					<div class="who_we_are_left nutritionleft">
+					
+						<p > Proin a nisl id nibh placerat ultrices. Nulla facilisis risus sit amet metus consectetur at dignissim tellus molestie. In tellus ipsum, tempus id vehicula et, faucibus ut nisl. Vestibulum pretium dictum mi, a facilisis tellus accumsan eget. Vivamus ultricies, magna quis congue vestibulum, sem ligula placerat justo, quis pharetra lorem nisl id sapien. Mauris porta tortor vitae lorem pharetra a euismod ante eleifend. Nam varius, nisl at ultricies rhoncus, quam metus fringilla arcu, et sollicitudin magna mi at odio. Proin sit amet lacus nisl. Duis consequat aliquam porta. Morbi molestie sodales orci a ultrices.</p>
+						<ul class="who_we_are_list">
+							<li> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </li><br/>
+							<li> Integer in tortor urna. Sed vel odio nulla. Aenean at nisl leo. Pellentesque eu nibh eu odio pharetra mattis ac vitae libero. </li><br/>
+							<li> Vestibulum pretium dictum mi, a facilisis tellus accumsan eget. Vivamus ultricies, magna quis congue vestibulum.</li><br/>
+							<li>Sem ligula placerat justo, quis pharetra lorem nisl id sapien. </li><br/>
+						</ul>
+					</div>
+					<div class="who_we_are_right nutritionright">
+						<!--<img src="assets/images/video.jpg"/>-->
+                    <div class="nutri_video">
+                    	  <video width="330" height="220" id="nutrition_video" class="video-js vjs-default-skin" controls preload="none" 
+                  poster="assets/images/video_nutritionimage.jpg"
+                  data-setup="{}" >
+              
+                    <source src="assets/videos/small.mp4" type='video/mp4' />                  
+              </video>
+                    </div>    
+                 
+					</div>
+                
+                </div>
+				<div class="meet_our_team ">
+				
+					
+                     <div class="workshop_instructorrslider nutritionslidere">
+                 
+                 	 <div id="nutrition_carosel" class="carousel module instructorcarosl" style="min-height:385px;">
+                  	   <ul>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/01.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/02.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/03.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/01.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/01.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/01.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/01.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/01.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        <li class="slide pilatesss">                          
+                        	<div class="workshop_insideli">
+                            	<div class="text_workshops">
+                                	<div class="nutri_image_slider">
+                                    	<img src="assets/images/nutrition/01.jpg" />
+                                    </div>
+                                    
+                                      <h4>Brent Anderson</h4>
+                                    
+                                    <p> Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula.Suspendisse eleifend ullamcorper accumsan. Vestibulum sed tellus lectus, a consequat ligula. </p>
+                                   
+                                 
+                                   
+                                    
+                                  
+                                    
+                                    <div class="readmoree readmoreenutrition"> 
+                                        <a href="nutritions_detail.html"> Read More </a>
+                                         <a href="nutritions_detail.html"> Choose Plan</a>
+                                     </div>
+                                     
+                            </div>
+                            </div>
+                        
+                                                  
+                        </li>
+                        
+                        
+                        
+                        
+                	    </ul>
+               		 </div>
+                
+                 </div>
+                 
+
+                
+				</div>
+                
+                
+                
+                <div class="retreats_pilates_menu">
+                
+                	<ul class="pilates_innaerpage">
+                    
+                    	<li class="pilates_innermenu">  <a href="pilates.html" class="pilates_inner1 common_inner_pilates"></a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner2 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu">  <a href="javascript:void(0)" class="pilates_inner3 common_inner_pilates">&nbsp; </a></li>
+                        <li class="pilates_innermenu ">  <a href="javascript:void(0)" class="pilates_inner4 common_inner_pilates">&nbsp; </a></li>
+                    
+                    </ul>
+                </div>
+                
+  				 </div>
+                 </div>
+            
+            </div>	
+       <!--mainContent ends here-->
+        
+        <div class="footer_wrapper">
+        	<div class="main-wrapper-fixed footer_wrap">
+             
+             <div class="footerright">
+             	<div>
+                  <span class="faceb footersoci"><a title="facebook" href="#"> f</a></span>
+                  <span class="twittr footersoci"><a href="#" title="twitter"> t</a></span>
+                  <span class="googleplus footersoci"><a href="#" title="googleplus"> g</a></span>
+                  <span class="socilmed footersoci"><a href="#" title="forum"> s</a></span>
+                  
+                  <span class="calll footersoci"><a href="#" title="call"> ca</a></span>
+                </div>
+             </div>
+             
+             <div class="footerleft">
+             	<div class="copyrights">&copy; Copyright 2013, Lilyfit , All Rights Reserved. </div>
+                <div class="poweredby"> <a target="_blank" href="http://colorcuboid.com/">Powered by <img src="assets/images/colorcuboid_logo.png" alt="Slider image">&nbsp;ColorCuboid Designs</a> </div>
+             </div>
+            
+            </div>
+        </div><!--footer ends here-->
+        
+         <div class="full_cover" style="display:none;"></div>        
+    </div>	<!--bodyWrapper ends here-->
+    	
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+<script type="text/javascript" src='assets/scripts/script.js'></script>	
+<script type="text/javascript" src='assets/scripts/jquery.capSlide.js'></script>	
+<script type="text/javascript" src='assets/scripts/menucaption_call.js'></script>	
+
+
+<script type="text/javascript" src="assets/scripts/jquery.carousel_instructors.js"></script>
+
+<!-- for html5 videos -->
+
+<script src="assets/scripts/video.js"></script>
+<script type="text/javascript">
+    videojs.options.flash.swf = "assets/scripts/video-js.swf";
+  </script>
+  
+<!-- for html5 videos -->
+
+
+
+<script type="text/javascript">
+
+
+
+
+$(document).ready(function() {		
+ window_widhths = $(window).width()+17;
+
+	$('body').removeClass('no-js');
+		$('#nutrition_carosel').carousel({
+					itemsPerPage: 3,
+					itemsPerTransition: 3,
+					easing: 'swing',
+					noOfRows: 1,
+					speed: 2000
+		});
+	
+		//$(".meet_our_team_slider .carousel ul li").css("width","240");
+		
+		
+	
+	 
+	
+	
+
+	
+});	
+		
+	
+$(document).ready(function(){
+	
+$('.nutritionslidere').mouseenter(function(){
+		
+		$('.next_carosel').css("visibility","visible");
+		$('.prev_carosel').css("visibility","visible");
+	});
+	$('.nutritionslidere').mouseleave(function(){
+		
+		$('.next_carosel').css("visibility","hidden");
+		$('.prev_carosel').css("visibility","hidden");
+});
+	
+$(".menuu1").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu2").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu3").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu4").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu5").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu6").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu7").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".shopmenu").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+$(".login_signup").css("animation","fx_caption_right "+ 2000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+$(".who_we_are_left p").css("animation","fx_caption_left "+ 3000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".who_we_are_right").css("animation","fx_caption_right "+ 3200 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".who_we_are_left li:eq(0)").css("animation","fx_caption_left "+ 3400 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".who_we_are_left li:eq(1)").css("animation","fx_caption_left "+ 3600 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".who_we_are_left li:eq(2)").css("animation","fx_caption_left "+ 3800 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".who_we_are_left li:eq(3)").css("animation","fx_caption_left "+ 4000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+	var widthofparent = $('.who_we_are_right').width();
+	var heightofparent = $('.who_we_are_right').height();
+	
+	videojs("aboutus_video_html5_api", {}, function(){
+  
+	});
+
+	
+	
+	
+	
+
+//$(".who_we_are_left").css("animation","fx_caption_left "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+//$(".who_we_are_right").css("animation","fx_caption_right "+ 3000 +"ms 1 cubic-bezier(.20,.100,.56,1)");
+
+ } );
+ 
+
+  
+ 
+   $(window).scroll(function(){
+   
+  
+ var n=1;
+ 
+for(var i=0;i<8;i++){
+	n=(i+1)*200;
+ $(".slide_about:eq("+ i +")").css("animation","fx_caption_right "+ n +"ms 1 cubic-bezier(.17,.89,.26,1)");
+  $('.retreats_pilates_menu').css("animation","fx_caption_left "+ n +"ms 1 cubic-bezier(.17,.89,.26,1)");
+ }
+ 
+
+
+
+   });
+
+
+
+</script>
+</body>
+

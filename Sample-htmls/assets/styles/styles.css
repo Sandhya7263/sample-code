@@ -1,0 +1,3003 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+*/
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn,  img, ins, kbd, q, s, samp,
+small, strike,  sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/********* rails admin override **/
+
+p,div,h1,h2,h3,h4,h5,h6
+{
+	padding:0px;
+	padding:0px;
+	margin:0px;
+	vertical-align: baseline;
+}
+p
+{
+margin-bottom:10px;
+line-height:1.3;
+text-align:justify;
+}
+strong
+{
+font-weight:bold;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+}
+em
+{
+font-style:italic;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+}
+/********* rails admin override **/
+ul li
+{
+    background:url(../images/tick.png) no-repeat left center;
+    padding-left:26px;
+    font-size:15px;
+ 
+}
+.who_we_are ul li
+{
+	line-height:20px;
+}
+
+.menu_ulist li
+{
+background:none;
+}
+
+.activeclasss a
+{
+	color:#333333 !important;
+}
+
+.header-submenu-wrap {
+	 background:none repeat scroll 0 0 #fff;
+    clear: both;
+    display: none;
+    float: left;
+    /*left: 0;*/
+    padding-top: 7px;
+    position: absolute;
+    top: 45px;
+    width: 1156px;
+    z-index: 13;
+	padding:13px;
+	left:-76px
+}
+
+.header-submenu-wrapinside
+{
+	position:relative;
+	left:0px;
+}
+.pilats_ul li,.breadcrums-wrapper-list li,.pilates_innaerpage li , .slides ul li,.retreat_details_left_listmain li,.retreat_details_down_listmain li,.mouse_over_drop_ul li,.filter_ul li
+{
+background:none !important;
+padding-left:0px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*-------Layout styles starts here---------*/
+body {
+	background:#fff;
+	/*background-image: url("../images/bg.jpg");
+    background-position: center center;*/
+	background-repeat:no-repeat;
+	font:normal 15px 'MyriadWebPro', arial;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+.header_wrapper_inside
+{
+	/*background-color:#DCDFD8;*/
+	
+	background:url("../images/nav_02.jpg") repeat-x scroll left top;
+	height:131px;
+}
+.header_wrapper_inside ul li
+{
+	border:none;
+}
+.bodyWrapper {
+	background-color: #FFFFFF;
+	width:1200px;
+	margin: 0 auto;
+	height:auto;
+	overflow:hidden;
+}
+
+a
+{
+	color:#2596c4;
+	outline:none;
+}
+a:hover
+{
+	/*transition:all 0.3s ease 0s;*/
+}
+@font-face{
+	font-family: 'Rupee Foradian';
+	src: url('../fonts/rupee/Rupee_Foradian.eot');
+	src: local('Rupee Foradian'), url('../fonts/rupee/Rupee_Foradian.ttf') format('truetype'),
+	url('../fonts/rupee/Rupee_Foradian.woff') format('woff'),
+	url('../fonts/rupee/Rupee_Foradian.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.rupeeSymbol {
+	font-family: "Rupee Foradian";
+	font-size: 12px;
+	font-style: normal;
+}
+
+@font-face {
+	 font-family: 'MyriadWebPro';
+	 src: url('../fonts/MyriadWebPro/myriad-web-pro-webfont.eot');
+	 src: url('../fonts/MyriadWebPro/myriad-web-pro-webfont?#iefix') format('embedded-opentype'),
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.woff') format('woff'), 
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.ttf') format('truetype'), 
+	  url('../fonts/MyriadWebPro/myriad-web-pro-webfont.svg#myriad-web-pro-webfont') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}
+
+@font-face {
+	 font-family: 'MYRIADPRO-BOLD';
+	 src: url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD.eot');
+	 src: url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD?#iefix') format('embedded-opentype'),
+	  url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD.woff') format('woff'), 
+	  url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD.ttf') format('truetype'), 
+	  url('../fonts/MYRIADPRO-BOLD/MYRIADPRO-BOLD.svg#MYRIADPRO-BOLD') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}
+
+@font-face {
+	 font-family: 'MyriadPro-Light';
+	 src: url('../fonts/MyriadPro-Light/MyriadPro-Light.eot');
+	 src: url('../fonts/MyriadPro-Light/MyriadPro-Light?#iefix') format('embedded-opentype'),
+	  url('../fonts/MyriadPro-Light/MyriadPro-Light.woff') format('woff'), 
+	  url('../fonts/MyriadPro-Light/MyriadPro-Light.ttf') format('truetype'), 
+	  url('../fonts/MyriadPro-Light/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+	 font-weight: normal;
+	 font-style: normal;
+}
+
+/* added for lilyfit **/
+
+.width_show {
+	display: block !important;
+	background: none repeat scroll 0 0 #9FF;
+	color: #000;
+	opacity: 0.8;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 1211;
+}
+
+.main-wrapper {
+	float: left;
+	font-size: 15px;
+	height: auto;
+	line-height: 16px;
+	width: 100%;
+}
+.main-wrapper-fixed {
+	height: auto;
+	margin: auto;
+	width: 1200px;
+}
+.floatleft {
+	float: left;
+	color: #666666;
+}
+.floatright {
+	float: right;
+}
+
+
+.showonlyonmob
+{
+	display:none;
+}
+
+
+
+.header_wrapper
+{
+	/*background:url("../images/bg_box.png") repeat scroll left top #F4F4F4;*/
+	float:left;
+	clear:both;
+	width:100%;
+	
+}
+
+.mainContent_wrapper
+{
+	background:none repeat scroll 0 0 #fff;
+	float:left;
+	clear:both;
+	width:100%;
+	
+}
+.mainContent_wrapper
+{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+.footer_wrapper
+{
+	background:none repeat scroll 0 0 #fff;
+	float:left;
+	clear:both;
+	width:100%;
+	border-top:solid 1px #F0F0F0;
+	
+}
+
+
+.header-left {
+	width: 100%;	
+	margin:0 auto;
+}
+.header-right {
+	float: right;
+	height: auto;	
+	width: auto;
+	z-index: 1000;
+}
+
+.menu_ulist {
+	float: left;
+	display: block;
+	width: 100%;
+	text-align:center;
+}
+
+.pilates_menu_inner
+{
+	float:right;
+	width:90%;
+}
+.menu_ulist {
+	display: block;
+	float: left;
+	margin-top: 12px;
+	width: 100%;
+	/*margin-bottom:12px;*/
+}
+
+
+.navi-menu {	
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    float: left;
+    margin-top:4.2%;
+    padding: 14px 27px;
+    text-align: center;
+    position:relative;
+}
+
+.menuu1
+{
+	padding-left: 0;
+    padding-right: 15px;
+}
+
+.menuu2
+{
+	 padding-left: 26px;
+    padding-right: 26px;
+}
+
+
+.menuu3
+{
+	paddig-left:26px;
+	padding-right: 26px;
+}
+
+.menuu4
+{
+	padding-left: 32px;
+    padding-right: 15px;
+}
+
+.menuu5
+{
+	padding-left:21px;
+    padding-right: 26px;
+}
+
+.menuu6
+{
+
+	padding-right: 11px;
+}
+
+.menuu7
+{
+	
+	padding-right: 26px;
+}
+
+.shopmenu
+{
+	padding-left:27px;
+	
+}
+
+
+
+.menulast
+{
+	padding-right:0px;
+}
+
+.logomenu 
+{	
+	border: medium none;
+    margin-top: 0;
+    padding-left: 21px;
+    padding-right: 41px;
+    padding-top: 0;
+	
+}
+
+.header_wrapper_inside .logomenu
+{
+background:none repeat scroll 0 0 #FFFFFF !important;
+}
+.menutoggle {
+	display: none;
+}
+
+
+.navi-menu a {
+	font-size: 20px;
+	font-family: 'MyriadWebPro';
+	color: #fff;
+	padding: 0;
+	float: left;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.navi-menu a:hover {
+	 color: #fff;
+}
+
+.navi-menu.activemenu a span
+{
+	border-bottom: 4px solid #27ACE2;
+    color: #27ACE2;
+	
+}
+
+.floatleftt
+{
+	float:left;
+	width:100%;
+}
+
+/* slideshow **/
+
+.home_banner
+{
+width:100%;
+float:left;
+}
+.footer_wrap
+{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.poweredby a
+{
+	color:#5E5E5E;
+	text-decoration:none;
+}
+
+.footerleft
+{
+	float:left;
+	margin-top:12px;
+	margin-bottom:10px;
+	
+}
+.poweredby
+{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:12px;
+	font-family:arial;
+}
+.footerright
+{
+	float:right;
+	
+}
+.faceb
+{
+	/*background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position: 5px 10px;
+    background-repeat: no-repeat;
+    bottom: 6px;
+    color: #258ED2;
+    display: inline-block;
+    font-size: 0;
+    height: 25px;
+    line-height: 21px;
+    padding-left: 31px;
+    position: relative;*/
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	  background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position: -2px 11px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+	
+	
+}
+
+.faceb:hover
+{
+	background-position:-2px -47px;
+}
+
+.twittr
+{
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	  background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position:-39px 11px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+	
+}
+.twittr:hover
+{
+	background-position:-39px -47px;
+}
+
+.googleplus
+{
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	  background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position:-79px 11px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+}
+
+.googleplus:hover
+{
+	background-position:-79px -47px;
+}
+
+
+.socilmed
+{
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	  background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position: -120px 11px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+}
+
+.socilmed:hover
+{
+	background-position:-120px -47px;
+}
+
+
+.skype
+{
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	  background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position: -160px 11px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+}
+
+.skype:hover
+{
+	background-position:-160px -47px;
+}
+
+
+.calll
+{
+	width:30px;
+	height:52px;
+	font-size:0px;
+	float:left;
+	display:inline-block;
+	color:#258ED2;
+	  background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/sociallinks.png");
+    background-position: -201px 11px;
+    background-repeat: no-repeat;
+	padding-right:10px;
+}
+
+
+.calll:hover
+{
+	background-position:-201px -47px;
+}
+
+.footersoci a
+{
+	  cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    position: relative;
+    top: 15px;
+    width: 34px;
+}
+
+.copyrights
+{
+	font-size:12px;
+	font-family:arial;
+	color:#5e5e5e;
+	
+}
+.poweredby a:hover
+{
+	color:#2596c4 !important;
+}
+
+.poweredby img
+{
+	position:relative;
+	top:5px;
+}
+
+.responisve-container
+{
+	/*height: 700px;;*/
+    position: relative;
+    z-index: -1;
+}
+.pilates_menu
+{
+	/*background: none repeat scroll 0 0 rgba(11, 11, 11, 0.5);*/
+	/* background:url(../images/bg_box.png) repeat left top  ; */
+    left: 0;
+    margin: 0 auto;
+    padding: 20px;
+   /* position: absolute;*/
+   position:fixed;
+    right: 0;
+    bottom: 95px;
+    width: 1024px;
+    z-index: 1000;
+}
+
+.fadewrapper
+{	
+    /*bottom: 285px;*/
+	bottom:137px;
+    display: none	;   
+    left: 0;
+   /* margin-bottom: -133px;   */
+    position: absolute;
+	/*display:block !important;*/
+   
+}
+
+.fadewrapperinner
+{
+	margin-bottom:24px;
+	 background: url("../images/bg_box.png") repeat scroll left top transparent;
+	  width: 83%;
+	   padding: 17px;
+    
+    
+}
+
+.pilats_ul
+{
+	float:right;
+	width:100%;
+	
+}
+.filter_image img
+{
+	text-align:center;
+}
+
+.pilates_li 
+{
+	display:inline;
+	float:left;
+	margin-right:10%;
+	/*width:23%;*/
+}
+
+.common_home_bottom_anchor
+{
+	display:inline-block;
+	/*background:#1172b5;*/
+	width:120px;
+	height:120px;
+	/*border-radius:133px;
+	border:solid #70a1b7 1px;*/
+	text-decoration:none;
+}
+
+
+.pilates_li:hover
+{
+	
+}
+.pilates_anchor
+{
+	background:url(../images/pilates01.png) no-repeat left top;
+	
+}
+
+.pilates_anchor:hover
+{
+	background:url(../images/pilates.png) no-repeat left top;
+	
+}
+
+.yoga_anchor
+{
+	background:url(../images/yoga01.png) no-repeat left top;
+	
+}
+
+.yoga_anchor:hover
+{
+	background:url(../images/yoga.png) no-repeat left top;
+	
+}
+
+.body_anchor
+{
+	background:url(../images/boday_toning01.png) no-repeat left top;
+	
+}
+
+.body_anchor:hover
+{
+	background:url(../images/boday_toning.png) no-repeat left top;
+	
+}
+
+.prenatal_anchor
+{
+	background:url(../images/prenatal01.png) no-repeat left top;
+	
+}
+
+.prenatal_anchor:hover
+{
+	background:url(../images/prenatal.png) no-repeat left top;
+	
+}
+
+
+.pilates_common
+{
+	font-size:0px;
+}
+.fadewrapper h2
+{
+	 font-size: 27px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+	line-height:29px;
+	
+}
+
+.fadewrapper p
+{
+	padding-bottom:10px;
+	font-size:15px;
+	
+	
+}
+
+.pilates_button
+{
+	background:#1172b5;
+	padding:5px;
+	color:#fff;
+	font-size:18px;
+	text-decoration:none;
+	margin-right:10px;
+}
+
+.arrow_down
+{
+	position:relative;
+	bottom:23px;
+	display:none;
+	left:49px
+	
+}
+.login_signup
+{
+	 position: fixed;
+    right: 0px;
+	
+}
+
+
+.login_button
+{
+	float: right;
+    position: fixed;
+    right: 0px;
+    top: 112px;
+}
+.loginsignupclass
+{
+	  background: url("../images/login_arrow.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    height: 36px;
+    line-height: 39px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 40px;
+}
+.login_button_anchor
+{
+	/*color:#fff;
+	text-decoration:none;
+	font-size:15px;
+	text-transform:uppercase;*/
+}
+.popup_blue_span
+{
+	display:block;
+	color:#2596C4;
+	font-size:18px;
+	margin-top:5px;
+}
+
+.bottom_anchor_list
+{
+	margin-top:10px;
+}
+
+.breadcrums-wrapper-list {
+    float: left;
+    width: auto;
+}
+
+.breadcrums-wrapper-list li a {
+    background: url("../images/breadcrumb_arrow.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    color: #ADADAD;
+    float: left;
+    padding: 5px 21px 5px 10px;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-size:14px;
+	
+}
+
+.breadcrums-wrapper-list li
+{
+	display:inline;
+}
+
+.breadcrums-wrapper-list li span {
+    color: #333333;
+    float: left;
+    padding: 5px 21px 5px 10px;
+	text-transform:uppercase;
+	font-size:14px;
+}
+.breadcrums-first a
+{
+	padding-left:0px !important;
+}
+
+.breadcrumb_navigation
+{
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:16px;
+}
+.page_title
+{
+	width:100%;
+	float:left;
+	border-bottom:solid 1px #ddd;
+	
+}
+
+
+
+.page_title h3
+{
+    float: left;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 29px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+
+}
+
+.filter_div
+{
+	width:100%;
+	float:left;
+	clear:both;
+	
+}
+
+.who_we_are_left li
+{
+    color:#999;
+}
+
+
+.filter_ul li a {
+   background: url("../images/pilates_arrow.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #DDDDDD;
+    color: #666666;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 12%;
+	padding-bottom:8px;
+}
+
+.filter_ul li {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+	width:100%;
+	line-height:19px;
+}
+.level_filter
+{
+	width: 53% !important;
+	padding-left:19px;
+}
+.filter_ul
+{
+	width:100%;
+	float:left;
+}
+/*  carosel slider ***/
+
+.carosel_div_class li
+{
+	background:none;
+	list-style-type:none;
+}
+#carousel {
+width:1200px;
+border:0px solid #222;
+height:300px;
+position:relative;
+clear:both;
+overflow:hidden;
+background:#FFF;
+margin:0 auto;
+}
+#carousel img {
+visibility:hidden; /* hide images until carousel can handle them */
+ /* otherwise it's not as obvious items can be clicked */
+
+ cursor: pointer;
+   
+	
+}
+
+
+
+
+#carousel img.carousel-center {
+	cursor:text;
+}
+
+#carousel #default_raty img, #carousel .leave_commentss img,ul#carousel div.pilates_details img
+{
+	visibility:visible;
+}
+
+.split-left {
+width:450px;
+float:left;
+}
+.split-right {
+width:400px;
+float:left;
+margin-left:10px;
+}
+#callback-output {
+height:250px;
+overflow:scroll;
+}
+textarea#newoptions {
+width:430px;
+}
+.carosel_navigation a
+{
+font-size:0px;
+}
+.carosel_navigation
+{
+bottom: 117px;
+position: absolute;
+
+width:100%
+}
+.carosel_left
+{
+left: -24px;
+position: absolute;
+z-index: 100;
+}
+.carosel_right
+{
+float: right;
+position: relative;
+right: -24px;
+z-index: 100;
+}
+.carosel_main_div
+{
+float: left;
+margin: 0 auto;
+width: 100%;
+}
+.navigation_paretrelative
+{
+position:relative;
+
+}
+.carousel-center
+{
+background:url('../images/preview_arrow.png') center center no-repeat; 
+}
+	  
+	  
+/*** slider carosel ***/
+
+.filterliactive
+{
+	background:url('../images/pilates_arrow_blue.png') right center no-repeat !important; 
+	border-bottom:2px solid #30b0e3 !important;
+}
+
+.filter_div_inner
+{
+	display:none;
+}
+.filter_div_inner {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #e7e6e6;
+	border-bottom:solid 5px #30B0E3;
+    padding:13px 0 13px 18px;
+    position: absolute;
+    top: 100%;
+    width: 35%;
+    z-index: 1000;
+	
+	min-width:11.8%;
+}
+
+.filter_ul_inner
+{
+	width:auto !important;
+}
+.filter_div_innerinstructors
+{
+	width:33% !important;
+	padding:0px !important;
+}
+.filter_div_innerinstructors li a:hover
+{
+	color:#28a5d6;
+}
+.filter_ul_insideinstructors
+{
+	  float: left;
+    padding-left: 11px;
+    width: 43% !important;;
+}
+.duration_filter
+{
+	width:auto !important;
+	padding:0px !important;
+}
+.duration_filter li a:hover
+{
+	color:#28a5d6;
+}
+
+.filter_heading
+{
+	 background: none repeat scroll 0 0 #51504F;
+    color: #FFFFFF;
+    font-size: 18px;
+    min-height: 41px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;;
+	
+}
+
+.filter_description
+{
+	font-size:13px;
+	color:#626161;
+	ext-align:justify;
+}
+.input {
+    background-color: #E6E6E0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.1) inset;
+    color: #000000;
+    font-size: 10pt;
+    margin-bottom: 5px;
+    padding: 4px 4px 4px 15px;
+}
+
+#features {
+    color: #5C5959;
+}
+.filterinsid {
+    cursor: pointer;
+    float: left;
+    padding-right: 3%;
+    width: 46%;
+}
+
+.pilates_details
+{
+	display:none;
+	position:absolute;
+}
+
+.full_cover {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.popup_main_container {
+   background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px;
+    /*height: 720px;*/
+    left: 50%;
+    margin-left: -357.5px;
+    /*margin-top: -349px;*/
+    position: fixed;
+    top: 50%;
+    width: 796px;
+    z-index: 99999;
+}
+.close_class_popup
+{
+background: url("../images/close_popup.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 41px;
+    position: relative;
+    width: 100%; 	
+}
+
+.innercontent_popup
+{
+	float:left;
+	padding:0 20px 37px 30px;
+	width:95%;
+	/*overflow:scroll;
+	overflow-x:hidden;*/
+}
+
+.iframediv
+{
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:16px;
+}
+
+.title_divv
+{
+	float:left;
+	clear:both;
+	width:100%;
+}
+
+.title_divv h2
+{
+	/*background: url("../images/facebooklike.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+	height:61px;
+	width:734px;*/
+	font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.description_divv
+{
+	text-align:justify;
+	font-size:14px;
+}
+
+.durationn
+{
+	float:left;
+	clear:both;
+	width:100%;
+	font-size:13px;
+	margin-top:10px;
+}
+.leftspann
+{
+	float:left;
+	width:17%;
+	display:block;
+	color:#999999;
+	text-transform:uppercase;
+	
+	
+}
+
+.rightspann
+{
+	float:left;
+	width:40%;
+	display:block;
+	color:#333333;
+	
+	
+}
+
+
+.videos_all
+{
+	display:none;
+	float:left;
+	clear:both;
+}
+.videos_all_inner
+{
+margin-top:10px;
+float:left;
+margin-right:18px;
+/*width:100%;	*/
+}
+
+.filter_ul_inside
+{
+	width:auto;
+	
+}
+.filter_ul_inside li a
+{
+	width:91%;
+	padding-left:11px;
+	background:none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border:none;
+}
+
+.level_filter .filterinsid
+{
+	padding-right: 2.5%;
+    width: 30.5% !important;
+}
+
+
+/*** like dislike **/
+
+.tab-tr{
+	/*width: 100%; height: 55px; 
+	border-bottom: #e6e6e6 1px solid; border-top: #e6e6e6 1px solid;*/	
+}
+.like-btn, .dislike-btn{
+	width: auto; height: 30px; padding:0 6px 0 29px; 
+	float: left; margin-left: 10px; margin-top: 0px;
+	cursor: pointer; color: #333333; font-size: 13px; line-height: 30px;
+	border:#fff 1px solid;
+	-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px; /* border radius */
+}
+
+
+.like-btn{background: url(../images/like-ico.png) 5px 50% no-repeat; }
+.like-btn:hover, .like-h{
+	background: url(../images/like-ico-h1.png) 5px 50% no-repeat; color: #366bb7;
+	background-color: #f0f0f0;	border: #c6c6c6 1px solid; 
+}
+.dislike-btn{background: url(../images/dislike-ico.png) 50% 50% no-repeat; }
+.dislike-btn:hover, .dislike-h{
+	background: url(../images/dislike-ico-h.png) 50% 50% no-repeat;
+	background-color: #f0f0f0;	border: #c6c6c6 1px solid; 
+}
+
+
+
+
+
+
+/*** like dislike **/
+
+#carousel #default_raty2 img ,#carousel #default_raty3 img  ,#carousel #default_raty4 img  	,#carousel #default_raty5 img  ,#carousel #default_raty6 img  
+{
+	visibility:visible;
+}
+
+.filter_retreats
+{
+	float:right;
+	display:block;
+}
+.filter_text
+{
+	 bottom: 13px;
+    font-size: 15px;
+    margin-right: 9px;
+    position: relative;
+}
+
+.retreats_inner
+{
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+	
+}
+
+.retreats_box
+{
+	 background: url("../images/Retreats_box_shadow.jpg") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 2%;
+    padding-bottom: 2.7%;
+    width: 48%;
+	background-size:contain;
+	/*margin-top:400px;*/
+	
+}
+.retreats_box_inner
+{
+	float: left;
+    padding:20px 16px 20px 30px;
+    width: auto;
+	border:1px solid #E8E8E8;
+}
+.retreats_title
+{
+	font-size:23px;
+	color:#3333333;
+	font-weight:bold;
+	width:auto;
+	line-height:35px;
+}
+.retreats_title_sub
+{
+	color:#999;
+	font-size:22px;
+	font-weight:bold;
+	width:auto;
+	font-family:'MyriadPro-Light';
+}
+.retreats_contents_down
+{
+	float:left;
+	margin-top:20px;
+}
+.retreats_image
+{
+	float:left;width:49%;
+	
+}
+.retreats_content_right
+{
+	float:left;
+	width:50%;;
+	
+}
+.decriptionss
+{
+	 color: #666666;
+    font-size: 15px;
+    line-height: 19px;
+    margin-bottom: 13px;;
+}
+
+.retrat_date
+{
+	color:#0099CC;
+	font-weight:bold;
+	font-size:18px;
+	margin-bottom:23px;
+}
+
+.readmoree a
+{
+	 background: none repeat scroll 0 0 #0099CC;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 10px 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.retreats_even
+{
+	margin-right:0px;
+	float:right;
+}
+
+/*.retreats_box
+{
+transition:	0.9s cubic-bezier(0.17, 0.89, 0.26, 1) 0s normal none 1 fx_caption_right;
+}*/
+
+.pilates_innaerpage
+{
+	float:left;
+	width:100%;
+}
+
+.pilates_innaerpage a
+{
+	text-decoration:none;
+	margin:0 auto;
+}
+.retreats_pilates_menu
+{
+	margin:0 auto;
+	width:770px;
+}
+
+.pilates_innermenu
+{	
+	display: inline;
+    float: left;
+  /*  margin-right: 9%;*/
+  width:24%;
+	
+}
+
+
+.common_inner_pilates
+{
+	display:list-item;
+	width:133px;
+	height:133px;
+	
+}
+
+
+.pilates_inner1
+{
+	background:url(../images/pilates02.png) no-repeat left top;
+	
+}
+
+.pilates_inner1:hover
+{
+	background:url(../images/pilates.png) no-repeat left top;
+	
+}
+
+.pilates_inner2
+{
+	background:url(../images/yoga02.png) no-repeat left top;
+	
+}
+
+.pilates_inner2:hover
+{
+	background:url(../images/yoga.png) no-repeat left top;
+	
+}
+
+.pilates_inner3
+{
+	background:url(../images/boday_toning02.png) no-repeat left top;
+	
+}
+
+.pilates_inner3:hover
+{
+	background:url(../images/boday_toning.png) no-repeat left top;
+	
+}
+
+.pilates_inner4
+{
+	background:url(../images/prenatal02.png) no-repeat left top;
+	
+}
+
+.pilates_inner4:hover
+{
+	background:url(../images/prenatal.png) no-repeat left top;
+	
+}
+
+.pilates_innermenu_last
+{
+	margin-right:0px;
+}
+
+/******* Instructors page *************/
+
+.instructors_all
+{
+	float:left;
+	width:100%;
+	clear:both;
+	overflow:hidden;
+}
+.instructors_all2
+{
+	float:left;
+	width:100%;
+	clear:both;
+	/*overflow:hidden;*/
+}
+
+
+.instructor_title_box
+{
+	float:left;
+	width:100%;
+	margin-top:12px;
+	margin-bottom:20px;
+}
+
+.instructor_title_box h2
+{
+	 border: 1px solid #EBEBE2;
+    clear: both;
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 8px;   
+    text-transform: uppercase;
+	line-height:28px;
+	font-family:'MYRIADPRO-BOLD';
+}
+.horizontalLine
+{
+ background: none repeat scroll 0 0 #EBEBE2;
+    border: medium none;
+    color: #EBEBE2;
+    height: 1px;
+}	
+	
+.instructor_title_box .horizontalLine
+{
+	margin:26px 0;
+}
+
+.pilates_instructorrslider,.workshop_instructorrslider
+{
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:10px;
+	 font-family: MyriadWebPro;
+	
+}
+
+.pilates_instructorrslider2,.workshop_instructorrslider2
+{
+	float:left;
+	width:100%;
+	clear:both;
+}
+
+
+
+.pilates_instructorrslider3,.workshop_instructorrslider3
+{
+	float:left;
+	width:100%;
+	clear:both;
+}
+
+
+
+.pilates_instructorrslider4,.workshop_instructorrslider4
+{
+	float:left;
+	width:100%;
+	clear:both;
+}
+
+
+
+
+/********* for retreats page **/
+
+.previewimage
+{
+	background:url(../images/video.png) no-repeat center center;
+	width:61px;
+	height:44px;
+	display:block;
+}
+
+/****** login pagr **/
+
+.loginpage_background
+{
+	background:url("../images/lilyfit01.jpg") no-repeat center  top ;
+   min-height:828px;
+	width:100%;
+	
+}
+
+.loginboxwidth
+{
+	/*width:60% !important;*/
+}
+.login_box_outer
+{
+	float:left;
+	background:url(../images/shadow_signup.png) no-repeat bottom center;
+	min-height:551px;
+}
+
+.signup_box_outer
+{
+	float:left;
+	background:url(../images/shadow_signup.png) no-repeat bottom center;
+	/*min-height:551px;*/
+	padding-bottom:58px;
+}
+
+
+.login_shadow
+{
+	 width: 480px;
+	/*background:url("../images/Untitled-3.png") no-repeat  bottom center rgba(0, 0, 0, 0);*/
+}
+.login_box_inner
+{
+	background: url("../images/bg_box.png") repeat scroll left top rgba(0, 0, 0, 0);
+    height: 100%;
+   /* margin-left: 10%;
+    margin-top: 31%;*/
+    min-height: 330px;
+    width: 480px;
+	
+}
+
+
+.login_div
+{
+	width:100%;
+	float:left;
+	clear:both;
+	height:480px;
+	/*overflow:hidden;*/
+}
+
+.heading_login
+{
+	font-size:28px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#27ACE2;
+}
+
+.heading_sugnup_sub
+{
+	font-size:23px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#27ACE2;
+}
+
+.login_inner_relative
+{
+   float: left;
+    padding: 20px 40px;
+    width:83%;
+}
+
+.login_div p
+{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.common_textbox
+{
+	border: 1px solid #afdaeb;
+    padding: 12px 10px;
+    width: 95%;
+	color:#949391;
+	
+}
+
+.submit_button
+{
+	 background: url("../images/login.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    height: 40px;
+    width: 139px;
+	font-weight:bold;
+}
+
+.password_forgot
+{
+	float:right;
+	line-height:42px;
+}
+
+.button_submit .signup 
+{
+	margin-left:10px;
+}
+.button_submit .signup a
+{
+	text-decoration:none;
+}
+.password_forgot a
+{
+	color:#000;
+}
+.button_submit
+{
+	color: #949391;
+    float: left;
+    font-size: 14px;
+    width: 100%;
+}
+.signup_box_outer .button_submit
+{
+	height:30px !important;
+}
+.button_submit a
+{
+	color:#949391;
+}
+
+
+
+/*********** about us page **/
+
+.who_we_are_list li
+{
+	background:url(../images/tick.png) no-repeat left center;
+	padding-left:26px;
+}
+.who_we_are
+{
+	float:left;
+	margin-top:20px;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+
+.who_we_are_left
+{
+	width:50%;
+	float:left;
+	
+
+}
+.who_we_are_right
+{
+	width:46%;
+	margin-left:4%;
+	float:left;
+}
+.who_we_are_title
+{
+     color: #323232 !important;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+.who_we_are_left p
+{
+	width:100%;
+	text-align:justify;
+	font-size:15px;
+	margin-bottom:20px;
+	line-height:1;
+	color:#999;
+	
+}
+.who_we_are_list
+{
+	color:#999;
+	font-size:15px;
+	
+}
+
+.meet_our_team
+{
+	float:left;
+	width:100%;
+	clear:both;
+	overflow:hidden;
+}
+
+
+.meet_our_team_title
+{
+	float:left;
+	width:100%;
+	margin-top:12px;
+	margin-bottom:20px;
+}
+
+.meet_our_team_title h2
+{
+	 border: 1px solid #EBEBE2;
+    clear: both;
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 18px;   
+    text-transform: uppercase;
+	font-family:'MYRIADPRO-BOLD';
+}
+
+.meet_our_team_title .horizontalLine
+{
+	margin-top:25px;
+}
+.meet_our_team_slider
+{
+
+
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:20px;
+	overfow:hidden;;
+	
+
+}
+
+/***** about us page ***/
+
+label.error
+{
+	color:red;
+	font-size:12px;
+}
+
+.spantextt
+{
+	display:none;
+}
+.video_pr {
+	background:url(../images/video.png) no-repeat center center;
+	
+	display: inline-block
+	;height: 54px;
+	left: 587px;
+	position: relative;
+	top: -189px;
+	width: 50px;
+	z-index: 100;
+}
+.video_pr a
+{
+	text-decoration:none;
+	display:block;
+	height:50px;
+}
+
+#carousel a
+{
+	cursor:text;
+
+}
+
+
+/*****  workshop page **/
+
+.worshop_inner_content h3
+{
+ clear: both;
+    color: #666666;
+    float: left;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 13px;
+    margin-top: 12px;
+    width: 100%;
+}
+.workshop_detail_lower ul
+{
+	float:left;
+}
+.worshop_inner_content li
+{
+line-height:20px;
+}
+.text_workshops h3 {
+   
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.text_workshops h4
+{
+	font-size: 21px;
+    font-weight: normal;
+	color:#999999;	
+	margin-bottom:8px;
+}
+
+
+.workshop_instructorrslider  .readmoree
+{
+	
+}
+
+
+/*.workshop_title_pilates
+{
+	background:#effaff;
+}
+
+.workshop_title_yoga
+{
+	background:#effbec;
+}
+
+.workshop_title_body
+{
+	background:#fffbe6;
+}
+
+.workshop_title_prenatal
+{
+	background:#faf1f9;
+}
+*/
+
+.duration_video 
+{
+	color:#41b2e4;
+	font-size:15px;
+	margin-bottom:8px;
+	display:block;
+}
+
+.workshop_cost 
+{
+	float:left;
+	width:100%;
+	margin-bottom:15px;
+}
+.cost_left 
+{
+	float:left;
+	width:48%;;
+	color:#666666;
+	font-size:15px;
+}
+
+
+.cost_right 
+{
+	float:right;
+	
+	color:#666666;
+	font-size:12px;
+}
+.cost_left span,.cost_right span
+{
+	font-weight:bold;
+}
+
+.iframe_workshops
+{
+	 clear: both;
+    float: left;
+    margin-bottom: 25px;
+	width:100%;
+}
+
+
+/****** Signup Page **/
+
+.signuppage_background
+{
+	background:url("../images/lilyfit01.jpg") no-repeat center  top;
+   min-height:856px;
+	width:100%;
+	/*background-size:cover;*/
+	
+}
+
+.checkboxx
+
+{
+	height:46px !important;
+}
+.signup_shadow
+{
+	 width: 480px;
+	/*background:url("../images/Untitled-3.png") no-repeat  bottom center rgba(0, 0, 0, 0);*/
+}
+.signup_box_inner
+{
+	background: url("../images/bg_box.png") repeat scroll left top rgba(0, 0, 0, 0);
+    height: 100%;
+   /* margin-left: 10%;
+    margin-top: 31%;*/
+	/*top: 29.5px !important;*/
+	padding-bottom:23px;
+    min-height: 580px;
+    width: 480px;
+	
+}
+
+.signup_div
+{
+	width:100%;
+	float:left;
+	clear:both;
+	height:643px;
+	/*overflow:hidden;*/
+}
+.input_different
+{
+	width:100%;
+	
+}
+.common_textbox_small
+{
+	width:45% !important;
+	float:left;
+
+/*margin-bottom: 20px !important;*/
+}
+.common_textbox_small1
+{
+	width:45% !important;
+	float:left;
+	margin-left:7% !important;
+
+	/*margin-bottom: 20px !important;*/
+}
+
+.heading_signup
+{
+	font-size:28px;
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#27ACE2;
+}
+.text_signup_heading
+{
+	font-size:14px;
+	margin-bottom:0px;
+	margin-top:0px;
+}
+.signup_inner_relative
+{
+   float: left;
+    padding: 20px 40px;
+    width:83%;
+}
+
+#signup_form p
+{
+	  float: left;
+    height: 68px;
+    width: 100%;
+	
+}
+#signup_form a
+{
+	color:#27ACE2;
+	text-decoration:none;
+}
+
+.signup_footer
+{
+	margin-top:-20px;
+}
+.signup_button
+{
+	border-top: 1px solid #FFFFFF;
+    float: right;
+    margin-top: 7px;
+    position: fixed;
+    right: 0px;
+    top: 140px;
+	
+}
+
+
+.header_wrapper_transparentbg
+{
+background-color:transparent;
+}
+
+.checkboxx label.error
+{
+	clear: both;
+    float: left;
+    width: 100%;
+}
+
+
+
+/*********************************** Retreat_Details ***/
+
+.retreat_details_slider
+{
+	background:url(../images/shaddow_detailed.jpg) no-repeat bottom center;
+	padding-bottom:25px;
+}
+.retreat_details_slider
+{
+	clear:both;
+	float:left;
+	width:100%;
+	margin-top:30px;
+
+}
+.shadow_detailed
+{
+	margin-top:-7px;
+}
+.retreat_details
+{
+	float:left;
+	margin-top:0px;
+	margin-bottom:20px;
+	overflow:hidden;
+}
+
+.retreat_details_left
+{
+	width:44%;
+	float:left;
+	border:1px solid #F0F0F0;
+	padding:20px;
+
+}
+.retreat_details_right
+{
+	width:44%;
+	margin-left:4%;
+	float:left;
+	border:1px solid #F0F0F0;
+	padding:20px;
+}
+.overview_retreats
+{
+	font-weight:bold;
+	margin-bottom:7px !important;
+	font-size:24px;
+}
+.retreat_details_left_listmain
+{
+	margin-top:20px;
+	margin-bottom:20px;
+
+}
+.retreat_details_left_list
+{
+	margin-top:2px;
+	font-size:14px;
+	font-family:'MyriadWebPro';
+}
+.overview_retreats_text
+{
+	font-size:18px;
+
+}
+.retreat_details_left p
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#999999;
+	text-align:justify;
+}
+
+where_when
+
+{
+	margin-top:10px;
+	margin-bottom:10px;
+	float:left;
+}
+.where_when p
+{
+	color:#494949;
+}
+.retreat_details_down_listmain
+{
+	float:left;
+	width:30%;
+}
+.overview_retreats_downlist
+{
+	font-weight:bold;
+margin-top: 40px !important;
+}
+.retreat_details_down_list
+{
+	font-size:14px;
+	color:#999;
+	margin-top:10px;
+}
+.price_retreats
+{
+	color:black;
+	font-weight:bold;
+	float:right;
+}
+.retreat_details_booknow
+{
+	float:left;
+	width:70%;
+}
+.retreat_details_booknow_image
+{
+	float:right;
+	margin-top:100px;
+}
+.retreat_detail_list_right
+{
+	margin-top:30px;
+}
+
+/************ instructor **/
+
+.text_instructors h3
+{
+	margin-top:15px;
+	margin-bottom:10px;
+	float:left;
+	clear:both;
+}
+.text_instructors .readmoree
+{
+float:left;
+clear:both;
+margin-top:10px;	
+}
+/*********** instructors************/
+
+/*             instructor_details     */
+
+.instructor_details #my-carousel-1 .text_instructors p
+{
+	/*float:left;*/
+	clear:both;
+	
+}
+.instructor_details
+{
+	margin-top:10px;
+	
+}
+.instructor_details p
+{
+	color:#999999;
+}
+.instructor_left
+{
+	background: url("../images/instructors/details/bg.jpg")  no-repeat scroll center bottom rgba(0, 0, 0, 0);
+    clear: both;
+    float: left;
+    padding-bottom: 22px;
+   
+    width: 37%;
+}
+.instructor_left_inner
+{
+	float:left;
+	width:100%;
+
+background:#f0f0f0;
+	
+}
+.instructor_right
+{
+	float:left;
+	width:61%;
+	
+	margin-left:2%;
+}
+.instructor_right_lower
+{
+	float:left;
+	width:98%;
+	padding-left:2%;
+	padding-top:30px;
+	margin:0 auto;
+	
+}
+.instructor_right_lower p
+{
+	padding-bottom:20px !important;
+}
+.instructor__detail_text
+{
+	margin-top:20px;
+}
+.instructor_left_text1
+{
+	text-align:center;
+	padding-top:28px;
+	padding-bottom:28px;
+	border-bottom:1px solid #999999;
+}
+.instructor_left_text1 h2
+{
+	font-size:28px;
+}
+.instructor_left_text2
+{
+	text-align:center;
+	
+}
+.instructor_left_list
+{
+	 clear: both;
+    float: left;
+    list-style: none outside none;
+   
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+.also_avail
+{
+	width:100%;
+	text-align:center;
+	font-size:14px;
+	float:left;
+	clear:both;
+	margin-top:23px;
+}
+.instructor_left_list li
+{
+	text-align:center;
+	 margin-left: 25px;
+    padding-left: 10px;
+color: #999999;
+    font-size: 15px;
+	display: inline;
+	background:url('../images/dot.png') no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+.instructor_left_list li a
+{
+	color:#999999;
+	text-decoration:none;
+}
+
+.instructor_left_list li a:hover
+{
+	color:#28a5d6;
+}
+
+.instructor_left_list_last
+{
+	padding-bottom:28px;
+	padding-top:28px
+}
+.instructor_left_image
+{
+	clear: both;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 87%;
+}
+
+.inst_slide .slide{
+background: none;
+    border: none;
+    margin: 0px !important;
+   
+       padding: 0 0 21px 15px !important;
+}
+ .view_more{
+	float:right;
+	padding-top:0px !important;
+ }
+ .text_instructors p
+ {
+ color: #999999;
+    font-size: 15px;
+ }
+ /*             workshop_details     */
+ .workshopdetillike
+ {
+ clear:both;
+ }
+ .workshop_details
+ {
+	float:left;
+	width:100%;
+	margin:0 auto;
+	background: url("../images/workshop_shadow.jpg")  no-repeat scroll center bottom rgba(0, 0, 0, 0);
+
+    padding-bottom: 24px;
+ }
+ 
+ .workshop_details_upper
+ {	
+	float:left;
+	width:100%;
+	margin:0 auto;
+	background:#f0f0f0;
+ }
+  .workshop_details_inner{
+	width:95%;
+	clear:both;
+	padding-top:2%;
+	padding-bottom:2%;
+	margin:0 auto;
+  }
+ .workshop_detail_lower
+ {
+	float:left;
+	width:100%;
+	margin:0 auto;
+	padding-top:20px;
+	
+ }
+ .video_details_workshop
+ {
+	float: left;
+	margin-top:7px;
+
+ }
+ .work_detail_heading
+ {
+ float:left;
+ width:100%;
+ clear:both;
+ margin-bottom:11px;
+ }
+ .video_details_workshop_icon
+ {
+ position: relative;
+ top: -24px;
+ right:-100px;
+ }
+ .details_workshop_title
+ {
+	float:left;
+	
+ }
+.workshop_objective
+{
+	font-size:18px;
+	font-weight:bold;
+}
+.worshop_inner_content {
+   /* border-bottom: 1px solid #999999;*/
+    clear: both;
+    float: left;
+    padding-bottom: 20px;
+	color:#999999;
+}
+.wcheading
+{
+clear:both;
+float:left;
+	
+}
+.workshop_comment
+{
+
+}
+.comment_toggle
+{
+	clear: both;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+}
+.comments_box_full_title
+{
+	width:96%;
+	float:left;
+	padding:2%;
+}
+.comment_border
+{
+	  border-bottom: 1px solid #D3D4D4;
+    color: #666666;
+    float: left;
+    font-size: 14px;
+    width: 100%;
+}
+
+.comments_inner_profilebody
+{
+	width:96%;
+	padding:2%;
+}
+.comments_reply  .comments_inner_profilebody
+{
+	width:90%;
+	padding-left:8%;
+}
+.comments_body
+{
+float:left;
+width:100%;
+}
+.comments_outer
+{
+background:#f0f1f1;
+width:100%;
+/*padding:2%;*/
+display:none;
+float:left;
+font-family:'MyriadWebPro';
+margin-bottom:20px;
+}
+.workshop_comment_inner
+{
+	clear:both;
+float:left;
+width:100%;
+margin:0 auto;
+margin-top:10px;
+/*border-bottom:1px solid #999;*/
+}
+.comment_profile
+{
+	clear:both;
+float:left;
+width:100%;
+margin:0 auto;
+margin-bottom:10px;
+}
+.comment_profile_pic
+{
+float:left;
+width:4%;
+}
+.comment_profile_name
+{
+float:left;
+width:96%;
+color:#999;
+font-size:14px;
+}
+.comment_profile_name h4
+{
+font-size:15px;
+color:#27ACE2;
+}
+.workshop_reply
+{
+background: url("../images/login.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+border: medium none;
+color: #FFFFFF;
+cursor: pointer;
+font-size: 13px;
+height: 26px;
+width: 80px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+.workshop_comment_inner_even
+{
+width:90%;
+margin-left:10%;
+}
+.comment_margin_even
+{
+margin-left:10%;
+}
+.enter_comment
+{
+  border-bottom: 1px solid #999999;
+    clear: both;
+    float: left;
+    margin: 7px auto 13px;
+    width: 100%;
+}
+.enter_comment_field
+{
+ border: 1px solid #999999;
+    padding: 1%;
+    width: 98%;
+-webkit-box-shadow: inset 0px 5px 5px rgba(0,0,0,.5); 
+-khtml-box-shadow: inset 0px 5px 5px rgba(0,0,0,.5); 
+-moz-box-shadow:inset 0px 5px 5px rgba(0,0,0,.5); 
+-o-box-shadow: inset 0px 5px 5px rgba(0,0,0,.5); ;
+box-shadow: inset 0px 5px 5px rgba(0,0,0,.5); 
+
+}
+.enter_comment_button
+{
+float:right;
+margin-top:20px;
+}
+
+.mouse_over_drop_ul li
+{
+	
+	margin-bottom:10px;
+	width:100%;
+	float:left;
+}
+
+.mouse_over_drop_ul li a
+{
+	color:#000;
+	font-size:14px;
+	padding-left:10px;
+	
+}
+
+.mouse_over_drop_ul li a:hover
+{
+	color:#000;
+	
+}
+
+/*********** about us page video **/
+
+#aboutus_video
+{
+	width:549px !important;
+	/*height:600px;*/
+	height:362px;
+}
+
+#workshop_video
+{
+	width:266px !important;
+	/*height:600px;*/
+	height:188px;
+}
+
+#instructordetail_video
+{
+	width:200px !important;
+	height:150px;
+}
+
+.comment_middle
+{
+	width:96%;
+	margin:0 auto;
+}
+.inner_comform
+{
+	width:96%;
+	margin:0 auto;
+}
+
+/************ sessions page **/
+.sessions_title
+{
+	 clear: both;
+    float: left;
+    font-size: 28px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.instructor_sessions ul li
+{
+	color:#999;
+	line-height:35px;
+	width:59%;
+}
+
+.instructor_sessions li span
+{
+	font-weight:bold;
+	display:inline-block;
+	width:40%;
+}
+
+.instructor_sessions ul
+{
+	margin-bottom:18px;
+}
+
+.instructor_sessions .instructor_left_inner ul
+{
+	margin-bottom:0px;
+}
+
+.instructor_sessions .instructor_left_inner li
+{
+	line-height:10px;
+	padding-top:0px;
+}
+
+
+.instructor_sessions .instructor_left_list_last
+{
+	padding-top:10px;
+}
+.session_anchor
+{
+	background:#28A5D6;
+	color:#fff;
+	padding:10px;;
+	text-align:center;
+	text-decoration:none;
+}
+/****** Nutritrions  **/
+
+.nutritionleft
+{
+	width:68%;
+	float:left;
+}
+
+.nutritionright
+{
+	float: right;
+    margin-left: 2%;
+    width: 29%;
+}
+
+.nutri_video
+{
+	background: none repeat scroll 0 0 #F0F0F0;
+    padding: 8px;
+}
+
+.nutrition_page p, .nutrition_page ul li
+{
+	color:#666666;
+}
+.nutrition_page p
+{
+	line-height:20px;
+	
+}
+.nutrition_page ul li
+{
+	
+}
+.nutrition_page .text_workshops h4
+{
+	color: #333333;
+    float: left;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    width: 100%;
+	
+}
+
+/**** Nutrition detail ***/
+
+.nutrition_details_left
+{
+	width:37%;
+	float:left;
+	background:url("../images/instructors/details/bg.jpg") no-repeat scroll center bottom ;
+	padding-bottom:22px;
+}
+
+.about_nutrion_person
+{
+	background: none repeat scroll 0 0 #F0F0F0;
+    padding: 4%;
+    text-align: center;
+    width: 92%;
+	float:left;
+	clear:both;
+	
+}
+.nutrition_details_right
+{
+	float: right;
+    margin-left: 1%;
+    padding: 2%;
+    width: 58%;
+}
+
+.nutrition_about
+{
+	font-size:26px;
+	font-weight:bold;
+	text-transform:uppercase;
+	float:left;
+	width:100%;
+	clear:both;
+	margin-bottom:10px;
+}
+
+.nutrion_title_big
+{
+	color:#000;
+	font-size:28px;
+	text-transform:uppercase;
+}
+
+.nutrion_title_small
+{  	
+	clear: both;
+    color: #666666;
+    float: left;
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 100%
+}
+
+.nutri_detail_title 
+{
+	   clear: both;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 31px;
+    width: 100%;
+}
+
+.nutrition_page_detail .nutrition_details_right ul li
+{
+	 background:url(../images/bullet_circle.jpg) no-repeat left center;
+	  padding-left: 19px;
+	
+}
+
+.nutrition_page_detail li.firstbgg div.workshop_insideli
+{
+	background-color:#f1f5ed !important;
+}
+
+.nutrition_page_detail li.secondbgg div.workshop_insideli
+{
+	background-color:#e9f5fd !important;
+}
+
+.nutrition_page_detail li.thirdbgg div.workshop_insideli
+{
+	background-color:#f4f2e1 !important;
+}
+
+.nutrition_page_detail li.fourthbg div.workshop_insideli
+{
+	background:none repeat scroll 0 0 #F0F0F0;
+}
+
+.nutrition_page_detail p.ordered_list
+{
+	 display: list-item;
+    float: left;
+    padding-left: 19px;
+}
+.nutrition_page_detail li.firstbgg p.ordered_list
+{
+	background:url("../images/bg1bullet.jpg") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+}
+
+.nutrition_page_detail li.secondbgg p.ordered_list
+{
+	background:url("../images/bg2bullet.jpg") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+}
+
+.nutrition_page_detail li.thirdbgg p.ordered_list
+{
+	background:url("../images/bg3bullet.jpg")  no-repeat scroll left 4px rgba(0, 0, 0, 0);
+}
+
+.nutrition_page_detail li.fourthbg p.ordered_list
+{
+	background:url("../images/bg4bullet.jpg") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+}
+
+
+.plan_heading
+{
+	float:left;
+	clear:both;
+	width:100%;
+	margin-bottom:14px;
+}
+
+.price_for_plan
+{	
+	clear: both;
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    width: 100%;
+}
+.price_for_plan span
+{
+	font-weight:bold;
+	font-size:14px;
+	
+}
+
+.nutrition_page_detail li.firstbgg .plan_heading
+{
+  color:#9c8d5e;
+  text-transform:uppercase;	
+}
+
+.nutrition_page_detail li.secondbgg .plan_heading
+{
+  color:#5d91b2;
+   text-transform:uppercase;		
+}
+
+.nutrition_page_detail li.thirdbgg.plan_heading
+{
+  color:#df9d29;
+   text-transform:uppercase;		
+}
+
+.nutrition_page_detail li.fourthbgg .plan_heading
+{
+  color:#f1f1f1;
+   text-transform:uppercase;		
+}
+
+.nutrition_page_detail li.firstbgg .ntrition_details a
+{
+  background:#9c8d5e;	
+}
+
+.nutrition_page_detail li.secondbgg .ntrition_details a
+{
+  background:#5d91b2;	
+}
+
+.nutrition_page_detail li.thirdbgg  .ntrition_details a
+{
+  background:#df9d29;	
+}
+
+.nutrition_page_detail li.fourthbgg .ntrition_details a
+{
+  background:#f1f1f1;	
+}
+
+.nutri_image_slider_inner
+{
+	background: none repeat scroll 0 0 #FFFFFF;
+    clear: both;
+    float: left;
+    padding: 2%;
+    width: 94%;
+}

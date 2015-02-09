@@ -1,0 +1,158 @@
+.workshop_instructorrslider .mask
+{
+	   margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+   /* width: 1162px;*/
+   
+	
+}
+
+.workshop_instructorrslider .carousel .disabled {
+color:gray;
+cursor:default;
+}
+                
+
+.no-js .carousel ul {position:static;}
+
+
+
+.workshop_instructorrslider .carousel ul li {
+    float: left;
+    height: 372px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 34px;
+    margin-top: 0;
+    text-align: left;
+    width: 376px;
+	padding-left:0px;
+	/*background:url(../images/workshops_bg.jpg) no-repeat center bottom;*/
+}
+
+.text_workshops
+{
+	float: left;
+    padding: 8% 7% 0 8%;
+    width: 84%;
+}
+
+.slide{
+	
+   /* border: 1px solid #E9E9E9;
+    margin-left: 20px !important;
+    margin-right: 24px !important;
+    padding:20px 33px !important;*/
+	background:url(../images/workshops_bg.jpg) no-repeat center bottom;
+   
+}
+
+.workshop_insideli 
+{
+	 background: none repeat scroll 0 0 #F0F0F0;
+    border: medium none;
+    float: left;
+    padding-bottom: 23px;
+    width: 375px;
+}
+
+.workshop_instructorrslider .carousel ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+
+.prev_carosel
+ {
+	 background: url("../images/arrow-left.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 54px;
+    left: 0;
+    position: absolute;
+    top: 36%;
+    width: 54px;
+    z-index: 100;
+ }
+ 
+.next_carosel
+ {
+	background: url("../images/arrow-right.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 54px;
+    position: absolute;
+    right: 0px;
+    top: 35%;
+    width: 54px;
+    z-index: 100;
+ }
+ 
+ .instructorcarosl
+ {
+	 position:relative;
+	 overflow:hidden;
+ }
+ 
+ .spantextt
+ {
+	 visibility:hidden;
+ }
+ 
+ .lastinstructor
+{
+margin-right:0px !important;
+}
+
+
+.text_instructors h3
+{
+	color:#333;
+	font-size:19px;
+	text-transform:uppercase;
+	font-weight:normal;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+			
+			
+.text_instructors .readmoree a {
+    padding: 5px 12px !important;
+}
+.readmoree a {
+    background: none repeat scroll 0 0 #28ace2;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 10px 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	float:right;
+	
+}
+
+
+.nutri_image_slider
+{
+	float:left;
+	width:100%;
+	clear:both;
+}
+
+.readmoreenutrition
+{
+	float:left;
+}
+
+.readmoreenutrition a
+{
+	margin-right: 10px;
+    padding: 5px 10px;
+}
+.nutrition_page a.prev_carosel ,.nutrition_page a.next_carosel 
+{
+	visibility:hidden;
+}

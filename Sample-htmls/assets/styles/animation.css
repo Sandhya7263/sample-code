@@ -1,0 +1,136 @@
+@keyframes fx_caption_right
+{
+0% {
+	-webkit-transform: translate(2000px,0);
+	-moz-transform: translate(2000px,0);
+	-o-transform: translate(2000px,0);
+	-ms-transform: translate(2000px,0);
+	transform: translate(2000px,0);
+	opacity: 0;
+ }
+ 100% {
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	transform: translate(0,0);
+	opacity: 1;
+ }
+}
+@-webkit-keyframes "fx_caption_right" {
+ 0% {
+   -webkit-transform: translate(2000px,0);
+   transform: translate(2000px,0);
+   opacity: 0;
+ }
+ 100% {
+   -webkit-transform: translate(0,0);
+   transform: translate(0,0);
+   opacity: 1;
+ }
+
+}
+@keyframes fx_caption_left
+{
+0% {
+	-webkit-transform: translate(-2000px,0);
+	-moz-transform: translate(-2000px,0);
+	-o-transform: translate(-2000px,0);
+	-ms-transform: translate(-2000px,0);
+	transform: translate(-2000px,0);
+	opacity: 0;
+ }
+ 100% {
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	transform: translate(0,0);
+	opacity: 1;
+ }
+}
+@-webkit-keyframes "fx_caption_left" {
+ 0% {
+   -webkit-transform: translate(-2000px,0);
+   transform: translate(-2000px,0);
+   opacity: 0;
+ }
+ 100% {
+   -webkit-transform: translate(0,0);
+   transform: translate(0,0);
+   opacity: 1;
+ }
+
+}
+
+/********** animate from top for menu ***/
+
+@keyframes fx_caption_top
+{
+0% {
+	-webkit-transform: translate(0px,-2000px);
+	-moz-transform: translate(0px,-2000px);
+	-o-transform: translate(0px,-2000px);
+	-ms-transform: translate(0px,-2000px);
+	transform: translate(0px,-2000px);
+	opacity: 0;
+ }
+ 100% {
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	transform: translate(0,0);
+	opacity: 1;
+ }
+}
+@-webkit-keyframes "fx_caption_top" {
+ 0% {
+   -webkit-transform: translate(0px,-2000px);
+   transform: translate(0px,-2000px);
+   opacity: 0;
+ }
+ 100% {
+   -webkit-transform: translate(0,0);
+   transform: translate(0,0);
+   opacity: 1;
+ }
+
+}
+
+
+@keyframes fx_caption_bottom
+{
+0% {
+	-webkit-transform: translate(0px,20000px);
+	-moz-transform:translate(0px,20000px);
+	-o-transform:  translate(0px,20000px);
+	-ms-transform: translate(0px,20000px);
+	transform:  translate(0px,20000px);
+	opacity: 0;
+ }
+ 100% {
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	transform: translate(0,0);
+	opacity: 1;
+ }
+}
+@-webkit-keyframes "fx_caption_bottom" {
+ 0% {
+   -webkit-transform:translate(0px,20000px);
+   transform: translate(0px,20000px);
+   opacity: 0;
+ }
+ 100% {
+   -webkit-transform: translate(0,0);
+   transform: translate(0,0);
+   opacity: 1;
+ }
+
+}
+
+
+/**************** animate from top for top menu *******/

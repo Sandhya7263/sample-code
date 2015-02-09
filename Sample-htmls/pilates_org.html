@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="LilyFit" />
+<meta name="description" content="LilyFit" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>LilyFit</title>
+<meta name="viewport" content="width=device-width" />
+ 
+
+<link rel="shortcut icon" href="common/images/favicon.ico" />
+
+<link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/animation.css" type="text/css" />
+
+<!-- for raty css -->
+<link rel="stylesheet" type="text/css" href="assets/styles/raty.css"/>
+<!-- for raty css -->
+
+
+<!-- for custom scrollbar -->
+<link href="assets/styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<!-- custom scrollbar -->
+
+
+<link rel="stylesheet" media="only screen and (max-width: 1024px)" href="assets/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 600px)" href="assets/styles/styles_480.css" />
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5)" href="assets/styles/styles_480.css" />
+
+
+</head>
+
+<body class="pilates">
+
+	<div class="main-wrapper">
+    <div class="width_show"></div>
+    
+    	  
+        <div class="slider-outer-wrap">
+	        <div class="slider-wrapper">
+            <div class="header_wrapper header_wrapper_inside">
+        	<div class="main-wrapper-fixed headerdiv">
+            	 <div class="header-left floatleft showonlyonmob"> 
+                     <a href="index.html">
+                     	<img title="VLC" id="logo" alt="Logo LilyFit" src="assets/images/lilyfit_logo.png"> 
+                     </a> 
+                 </div> 
+                 <div class="floatleftt"> 
+                        <div class="menu_top header-left">
+                        	<div class="menutoggle"> MENU </div>
+                            <ul class="menu_ulist">
+                               <li class="classsmenu navi-menu paddinganchor"><a href=""> <span> Classes </span> </a> </li>
+                               <li class="instructorsmenu navi-menu paddinganchor"><a href="instructors.html"> <span> Instructors </span> </a> </li>
+                               <li class="workshopsmenu navi-menu paddinganchor"><a href="workshops.html"> <span> Workshops </span> </a>  </li>
+                               <li class="retreatsmenu navi-menu paddinganchor"><a href="retreats.html"> <span> Retreats </span> </a>  </li>
+                               
+                               <li class="navi-menu logomenu "> <a href="index.html"><img alt="Logo" src="assets/images/lilyfit_logo.png" /></a>   </li>
+                               <li class="nutritionmenu navi-menu paddinganchor">  <a href="instructors.html"><span>Nutrition</span> </a>  </li>
+                               <li class="forummenu navi-menu paddinganchor"> <a href="javascript:void(0)"><span> Forum  </span> </a></li>
+                               <li class="blogmenu navi-menu paddinganchor"><a href="javascript:void(0"> <span> Blog </span> </a>  </li>
+                                <li class="shopmenu navi-menu paddinganchor menulast">  <a href="javascript:void(0"><span> Shop </span></a> </li>                       
+                            </ul>
+                         </div>   
+                 </div>  
+                 
+            </div>	 
+            	<div class="login_button">
+ 		              <span class="login_span"> <a href="login.html" class="login_button_anchor"> <img src="assets/images/login.jpg" alt="login"/></a></span>
+                 </div>         
+        </div>
+        	
+        	</div>
+        	
+        	</div>
+		
+		<div class="mainContent_wrapper">
+        	<div class="main-wrapper-fixed ">
+            	
+                <div class="breadcrumb_navigation">
+                	<ul class="breadcrums-wrapper-list">
+                    <li class="breadcrums-first">
+                        <a href="index.html">Home</a>
+                    </li>
+                     <li>
+                        <span>Pilates</span>
+                    </li>
+
+            		</ul>
+                </div>
+                
+                <div class="page_title">
+                	<h3>Pilates </h3>
+                </div>
+                
+                <div class="filter_div"> 
+                
+                  <ul class="filter_ul">
+                  		<li class="pilates_lii"> <a class="filter_li" href="javascript:void(0)"> Style </a>                        
+                        <div class="filter_div_inner">
+                        	<div class="filterinsid">
+                            	<div class="filter_heading">
+                                	Style1
+                                </div>
+                                <div class="filter_image">
+                                <img src="assets/images/filter1.jpg"  alt="filter"/>
+                                </div>
+                                <div class="filter_description"> classes consist of exercises performed on the floor which were designed to target and isolate muscles using the gravity of your own body. These exercises fluidly move your body ultimately building core strength, flexibility, awareness and control. Coupled with integrated breathing techniques Pilates is designed to aid in weight loss, postural imbalances, and alignment and also reduce stress, tension, and increasing your fitness level. The ultimate goal... a beautiful Pilates body.  </div>
+                            </div>
+                            <div class="filterinsid">
+                            	<div class="filter_heading">
+                                	Style2
+                                </div>
+                                <div class="filter_image">
+                                <img src="assets/images/filter1.jpg"  alt="filter" />
+                                </div>
+                                <div class="filter_description"> classes consist of exercises performed on the floor which were designed to target and isolate muscles using the gravity of your own body. These exercises fluidly move your body ultimately building core strength, flexibility, awareness and control. Coupled with integrated breathing techniques Pilates is designed to aid in weight loss, postural imbalances, and alignment and also reduce stress, tension, and increasing your fitness level. The ultimate goal... a beautiful Pilates body.  </div>
+                            </div>
+                            <div class="filterinsid">
+                            	<div class="filter_heading">
+                                	Style3
+                                </div>
+                                <div class="filter_image">
+                                <img src="assets/images/filter1.jpg"   alt="filter"/>
+                                </div>
+                                <div class="filter_description"> classes consist of exercises performed on the floor which were designed to target and isolate muscles using the gravity of your own body. These exercises fluidly move your body ultimately building core strength, flexibility, awareness and control. Coupled with integrated breathing techniques Pilates is designed to aid in weight loss, postural imbalances, and alignment and also reduce stress, tension, and increasing your fitness level. The ultimate goal... a beautiful Pilates body.  </div>
+                            </div>
+                            <div class="filterinsid">
+                            	<div class="filter_heading">
+                                	Style4
+                                </div>
+                                <div class="filter_image">
+                                <img src="assets/images/filter1.jpg"   alt="filter"/>
+                                </div>
+                                <div class="filter_description"> classes consist of exercises performed on the floor which were designed to target and isolate muscles using the gravity of your own body. These exercises fluidly move your body ultimately building core strength, flexibility, awareness and control. Coupled with integrated breathing techniques Pilates is designed to aid in weight loss, postural imbalances, and alignment and also reduce stress, tension, and increasing your fitness level. The ultimate goal... a beautiful Pilates body.  </div>
+                            </div>
+                            <div class="filterinsid">
+                            	<div class="filter_heading">
+                                	Style5
+                                </div>
+                                <div class="filter_image">
+                                <img src="assets/images/filter1.jpg"  alt="filter"/>
+                                </div>
+                                <div class="filter_description"> classes consist of exercises performed on the floor which were designed to target and isolate muscles using the gravity of your own body. These exercises fluidly move your body ultimately building core strength, flexibility, awareness and control. Coupled with integrated breathing techniques Pilates is designed to aid in weight loss, postural imbalances, and alignment and also reduce stress, tension, and increasing your fitness level. The ultimate goal... a beautiful Pilates body.  </div>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="dropdown_lii"> <a class="filter_li" href="javascript:void(0)"> Level </a>
+                        <div class="filter_div_inner">
+                        	                      	                               
+                        <ul class="filter_ul_inside">
+                        <li >
+                        <a href="#">  Level1 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Level2 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Level3 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Level4 </a>
+                        </li>
+                        </ul>
+                           
+                            
+                        </div>
+                        </li>
+                        <li class="dropdown_lii" > <a class="filter_li" href="javascript:void(0)"> Instructor </a>
+                        <div class="filter_div_inner">
+                        	<ul class="filter_ul_inside">
+                        <li >
+                        <a href="#">  Instructor1 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Instructor2 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Instructor3 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Instructor4 </a>
+                        </li>
+                        </ul>
+                        </div>
+                        </li>
+                        <li class="dropdown_lii"> <a class="filter_li" href="javascript:void(0)"> Duration  </a>
+                        <div class="filter_div_inner">
+                        	<ul class="filter_ul_inside">
+                        <li >
+                        <a href="#">  Instructor1 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Instructor2 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Instructor3 </a>
+                        </li>
+                         <li >
+                        <a href="#">  Instructor4 </a>
+                        </li>
+                        </ul>
+                        </div>
+                        </li>
+                  </ul>
+                </div>
+                
+                <div class="carosel_main_div">
+   
+                    <ul id="carousel" class="carosel_div_class">
+                      <li id="pilates1"> <a href="javascript:void(0)"><iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></a>
+                      	<div class="pilates_details">
+                        	
+                       		 
+                        </div>
+                       </li> 
+                     <li id="pilates2"> <a href="javascript:void(0)"><iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></a>
+                     <div class="pilates_details">
+                        	
+                       		 
+                        </div>
+                     	
+                     </li> 
+                     <li id="pilates3"> <a href="javascript:void(0)"><iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></a>
+                     <div class="pilates_details">
+                        	
+                       		 
+                        </div>
+                     </li> 
+                      <li id="pilates4"><a href="javascript:void(0)"><iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></a>
+                      
+                      </li> 
+                     <li id="pilates5"> <a href="javascript:void(0)"><iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></a><div class="pilates_details">
+                        	
+                       		 
+                        </div>
+                     
+                     </li> 
+                     
+                    
+                    </ul>
+                    
+                    <div class="navigation_paretrelative">
+                    <div class="carosel_navigation"> 
+                    <a href="#" id="prev" class="carosel_left"><img src="assets/images/arrow-left.png"   alt="filter"/> </a> 
+                     <a class="carosel_right" href="#" id="next"><img src="assets/images/arrow-right.png" alt="filter"/> </a> 
+                    </div>
+                    </div>
+                    
+                   
+                   
+                    <div class="videos_all">
+                    <div class="videos_all_inner">                    
+	                 <iframe width="100%" height="200" src="http://www.youtube.com/watch?v=7sfwKRskJNI" allowfullscreen></iframe></div>
+                    
+                    <div class="videos_all_inner">                    
+	                 <iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></div>
+                   
+                    <div class="videos_all_inner">                    
+	                 <iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></div>
+                   
+                    <div class="videos_all_inner">                    
+	                 <iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></div>
+                   
+                    <div class="videos_all_inner">                    
+	                 <iframe width="100%" height="200" src="//www.youtube.com/embed/eE2KrihqNds" allowfullscreen></iframe></div>
+                    </div>
+                    
+        </div>
+        
+        		<div class="video_pr" >
+                	<a href="#" class="video_pr_anchor">&nbsp;</a>
+                </div>
+
+  				 </div>
+            
+            </div>	
+       <!--mainContent ends here-->
+        
+        <div class="footer_wrapper">
+        	<div class="main-wrapper-fixed footer_wrap">
+             
+             <div class="footerright">
+             	<div>
+                  <span class="faceb footersoci"><a href="#"> f</a></span>
+                  <span class="twittr footersoci"><a href="#"> t</a></span>
+                  <span class="googleplus footersoci"><a href="#"> g</a></span>
+                  <span class="socilmed footersoci"><a href="#"> s</a></span>
+                  <span class="skype footersoci"><a href="#"> sk</a></span>
+                  <span class="calll footersoci"><a href="#"> ca</a></span>
+                </div>
+             </div>
+             
+             <div class="footerleft">
+             	<div class="copyrights">&copy; Copyright 2013, Lilyfit , All Rights Reserved. </div>
+                <div class="poweredby"> <a target="_blank" href="http://colorcuboid.com/">Powered by <img src="assets/images/colorcuboid_logo.png" alt="Slider image">&nbsp;ColorCuboid Designs</a> </div>
+             </div>
+            
+            </div>	
+        </div><!--footer ends here-->
+        
+         <div class="full_cover" style="display:none;"></div>        
+    </div>	<!--bodyWrapper ends here-->
+    
+	
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+<script type="text/javascript" src='assets/scripts/script.js'></script>	
+
+<!-- for carosel plugiin in pilates page -->
+<script type="text/javascript" src="assets/scripts/jquery.waterwheelCarousel.js"></script>
+<script type="text/javascript" src="assets/scripts/pilates_carosel.js"></script>
+<!-- for carosel plugiin in pilates page -->
+
+
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.raty.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+
+<script type="text/javascript">
+ $(document).ready(function(){
+	
+	$('#default_raty').raty();
+	$('#default_raty2').raty();
+	$('#default_raty3').raty();
+	$('#default_raty4').raty();
+	$('#default_raty5').raty();
+	$('#default_raty6').raty();
+});
+</script>
+
+<script type="text/javascript">
+    $(function(){ 
+       // var pageID = <?php echo $pageID;  ?>; 
+
+        $('.like-btn').click(function(){
+            $('.dislike-btn').removeClass('dislike-h');    
+            $(this).addClass('like-h');
+            $.ajax({
+                type:"POST",
+                url:"ajax.php",
+                data:'act=like&pageID='+pageID,
+                success: function(){
+                }
+            });
+        });
+        $('.dislike-btn').click(function(){
+            $('.like-btn').removeClass('like-h');
+            $(this).addClass('dislike-h');
+           $.ajax({
+                type:"POST",
+                url:"ajax.php",
+                data:'act=dislike&pageID='+pageID,
+                success: function(){
+                }
+            });
+        });
+        $('.share-btn').click(function(){
+            $('.share-cnt').toggle();
+        });
+    });
+</script>
+
+    
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+/* for pilates page dropdown **/
+ 
+ $('.filter_ul li a.filter_li').click(function(){	
+ 	$('.filter_div_inner').fadeOut();
+	$('.filter_li').removeClass("filterliactive");	
+ 	 var innerdivv = $(this).parent().find('.filter_div_inner');
+	
+	 if(innerdivv.is(":visible"))
+	 {
+		 $(this).removeClass("filterliactive");
+		 innerdivv.fadeOut();
+	 }
+	 else
+	 {
+		 $(this).addClass("filterliactive")
+		 innerdivv.fadeIn();
+	 }
+  		 
+ });
+ 
+
+ 
+$('.innercontent_popup').mCustomScrollbar({
+	scrollButtons:{
+		enable:true
+	},
+	advanced:{
+        updateOnContentResize: true,
+		updateOnBrowserResize: true
+    }
+});
+
+
+ 
+$('body').on('click', '.close_class_popup', function(){	
+	 $('.full_cover').fadeOut();
+	 $('.full_cover').fadeTo("slow", 0);
+	 $('.carousel-center').parent().parent().find('.pilates_details').empty();
+	 $(this).parents('.pilates_details').fadeOut();
+	 
+
+});
+
+
+// For esc key  close the popup & filter dropdown hide remove li class
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) {
+		
+		//if($(".pilates_details").is(':visible')){				
+        $( ".pilates_details" ).hide();
+		$('.carousel-center').parent().parent().find('.pilates_details').empty();
+		$('.full_cover').fadeTo("slow", 0);
+		 $('.full_cover').fadeOut();
+		 $('.filter_div_inner').hide();
+		 $(".filter_ul").find(".filterliactive").removeClass("filterliactive");
+	}
+ });
+ 
+/* click on body tag make filter dropdown hide and remove li class **/
+
+$(document).click(function(event) {		
+
+	if ( !$(event.target).hasClass('filter_li')) {		 	
+		$(".filter_div_inner").hide();				
+		$(".filter_ul").find(".filterliactive").removeClass("filterliactive");
+	}
+
+	
+$(document).on("click",".full_cover",function(){
+	 $('.carousel-center').parent().parent().find('.pilates_details').empty();
+	 $( ".pilates_details" ).hide();
+	 
+	$('.full_cover').fadeTo("slow", 0);
+	 $('.full_cover').fadeOut();
+})
+});
+	
+
+
+/* click on body tag make filter dropdown hide and remove li class **/
+
+
+	
+	$(document).on('click','.video_pr_anchor',function(){
+	//$('.carousel-center').click();
+	
+	var loadingdiv = $('#carousel').find('.carousel-center').parent().next();
+	
+	var clikedid = $('#carousel').find('.carousel-center').parent().parent().attr('id');
+	
+
+    clikedid = clikedid.replace("pilates", "");
+   
+	
+	//pilates5
+	
+	window_height = $(window).height();
+	window_height = window_height -200; 
+	$('.popup_main_container').css("height",window_height);
+	$('.popup_main_container').css("top","100px");
+	
+	
+	var popcontentheight = window_height - 40;
+	$('.innercontent_popup').css("height",popcontentheight);
+	
+	//	$(loadingdiv).load('untitled.html');
+	var dataString = clikedid;
+	$.ajax({  
+	  type: "POST",  
+	  url: "untitled.html",  
+	  data: dataString, 
+	  success: function(dataresult) { 
+	  $(loadingdiv).html(dataresult);				 
+	  }  
+	});
+	
+	$('.carousel-center').parent().parent().find('.pilates_details').fadeIn();
+				
+	$('.full_cover').css("display","block");
+	$('.full_cover').fadeTo("slow", 0.8);	
+	
+})
+	
+});
+</script>
+
+
+	</body>
+</html>
+

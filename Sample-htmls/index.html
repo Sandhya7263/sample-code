@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="en" />
+<meta name="keywords" content="LilyFit" />
+<meta name="description" content="LilyFit" />
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css" />
+
+<title>LilyFit</title>
+<meta name="viewport" content="width=device-width" />
+ 
+
+<link rel="shortcut icon" href="common/images/favicon.ico" />
+
+<link rel="stylesheet" href="assets/styles/styles.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/animation.css" type="text/css" />
+<link rel="stylesheet" href="assets/styles/style_menumouseover.css" type="text/css" />
+
+<!-- for slider -->
+<link rel="stylesheet" type="text/css" href="assets/styles/fractionslider.css"/>
+<!-- for slider -->
+
+<!-- for custom scrollbar -->
+<link href="assets/styles/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<!-- custom scrollbar -->
+
+<link rel="stylesheet" media="only screen and (max-width: 1024px) and (max-resolution: 119.9dpi)" href="assets/styles/styles_1024.css" />
+<link rel="stylesheet" media="only screen and (max-width: 600px) and (max-resolution: 119.9dpi)" href="assets/styles/styles_480.css" />
+<link rel="stylesheet" media="only screen and (max-width: 1200px) and (max-resolution: 119.9dpi)" href="assets/styles/styles_1200.css" />
+<link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) and (max-resolution: 119.9dpi)" href="assets/styles/styles_480.css" />
+
+
+</head>
+
+<body class="home">
+
+	<div class="main-wrapper">
+    <div class="width_show"></div>
+    
+    	  
+        <div class="slider-outer-wrap">
+	        <div class="slider-wrapper">
+            <div class="header_wrapper">
+        	<div class="main-wrapper-fixed headerdiv">
+               
+            	<div class="header-left floatleft showonlyonmob"> 
+                     <a href="index.html">
+                     	<img title="VLC" id="logo" alt="Logo LilyFit" src="assets/images/lilyfit_logo.png"> 
+                     </a> 
+                 </div> 
+                 
+                 <div class="login_signup">	 
+            	<div class="login_button">
+ 		              <span class="login_span"> 
+                      <a  href="login.html" class="login_button_anchor loginsignupclass changelogintext"> 
+                       
+                      </a>
+                      </span>
+                 </div> 
+                 <div class="signup_button" style="display:none;">
+ 		              <span class="signup_span"> 
+                      <a href="signup.html" class="login_button_anchor loginsignupclass"> 
+                      Signup
+                      </a></span>
+                 </div>
+                 
+                 <!--<div class="signup_button">
+ 		              <span class="signup_span"> <a href="login.html" class="signup_button_anchor"> <img src="assets/images/login.jpg" alt="login"/></a></span>
+                 </div> -->
+                 
+                   </div>
+                   
+                 <div class="floatleftt"> 
+                 
+                  
+                        <div class="menu_top header-left">
+                        	<div class="menutoggle"> MENU </div>
+                            <ul class="menu_ulist">
+                               <li class="menuu1 navi-menu paddinganchor"><a href="aboutus.html"> <span> About </span> </a>                                                               
+                               </li>
+                               <li class="menuu2 navi-menu paddinganchor classesmenu"><a href="javascript:void(0)"> <span> Classes </span> </a>                                
+                               
+                               <div class="header-submenu-wrap">
+                                  <div class="header-submenu-wrapinside">
+                                     <div class="demo">
+                                        <div id="capslide_img_cont1" class="ic_container">
+                                            <img src="assets/images/menu/Pilates.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PILATES</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Pilates1</a></li>
+                                                    <li> <a href="#"> Pilates2</a></li>
+                                                    <li> <a href="#"> Pilates3</a></li>
+                                                    <li> <a href="#"> Pilates4</a></li>
+                                                    <li> <a href="#"> Pilates5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demo">
+                                        <div id="capslide_img_cont2" class="ic_container">
+                                            <img src="assets/images/menu/Yoga.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>YOGA</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Yoga1</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont3" class="ic_container">
+                                            <img src="assets/images/menu/Boady_Toning.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                               <h3>BODY TONNIN  <br/> & DANCE</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                    <li> <a href="#"> Body1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont4" class="ic_container">
+                                            <img src="assets/images/menu/Pre_PostNatal.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>PRENATAL</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                    <li> <a href="#"> natal1</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo">
+                                        <div id="capslide_img_cont5" class="ic_container">
+                                            <img src="assets/images/menu/Pilates.jpg" width="180" height="240" alt=""/>
+                                            <div class="overlay" style="display:none;"></div>
+                                            <div class="ic_caption">                                            
+                                                <h3>Private & Corporate Sessions</h3>
+                                                <div class="ic_text color1">
+                                                  <ul class="mouse_over_drop_ul">
+                                                  	<li> <a href="#"> Yoga1</a></li>
+                                                    <li> <a href="#"> Yoga2</a></li>
+                                                    <li> <a href="#"> Yoga3</a></li>
+                                                    <li> <a href="#"> Yoga4</a></li>
+                                                    <li> <a href="#"> Yoga5</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                     <div class="demolast">
+										<h2> Classes</h2> 
+                                        <p> <a href="javascript:void(0)"> Pilates</a></p>
+                                          <p> <a href="javascript:void(0)"> Yoga</a>  </p>
+                                          <p>  <a href="javascript:void(0)"> Body Tonning & Dance </a> </p> 
+                                           <p> <a href="javascript:void(0)"> Prenatal</a>  </p>    
+                                           <p> <a href="javascript:void(0)"> Private & <br/> Corporate Sessions </a>  </p>                       
+                                      
+                                      </div>
+                                      </div>
+                               </div>
+                               </li>
+                               <li class="menuu3 navi-menu paddinganchor"><a href="instructors.html"> <span> Instructors </span> </a>  </li>
+                               <li class="menuu4 navi-menu paddinganchor"><a href="retreats.html"> <span> Blog </span> </a>  </li>
+                               
+                               <li class="navi-menu logomenu "> <a href="index.html"><img alt="Logo" src="assets/images/lilyfit_logo.png" /></a>   </li>
+                               <li class="menuu5 navi-menu paddinganchor">  <a href="workshops.html"><span>Workshops</span> </a>  </li>
+                               <li class="menuu6 navi-menu paddinganchor"> <a href="retreats.html"><span> Retreats  </span> </a></li>
+                              <li class="menuu7 navi-menu paddinganchor"><a href="nutritions.html"> <span> Nutrition </span> </a>  </li>
+                                <li class="shopmenu navi-menu paddinganchor menulast">  <a href="javascript:void(0)"><span> Shop </span></a> </li>                       
+                            </ul>
+                         </div>   
+                 </div>  
+                 
+            </div>
+            	         
+       		 </div>
+        
+           
+            <div class="responisve-container">
+            
+                <div class="slider">
+                    <div class="fs_loader"></div>
+                    
+                    <div class="slide"> 
+                     <img    src="assets/images/banner1.jpg" 
+                                
+                                data-position="0,-300" data-step="0" data-in="fade" data-out="fade" data-easeIn="easeOutCirc" alt="Slider image">
+                           
+                        
+                         
+                    </div>
+                    
+                    <div class="slide"> 
+                        <img    src="assets/images/banner2.jpg" 
+                                
+                                data-position="0,-300" data-step="0" data-in="fade" data-out="fade" data-easeIn="easeOutCirc" alt="Slider image">                                
+                                         
+                    </div>
+                    
+                     
+                    
+                   
+                    
+                </div>
+                 
+            </div>
+            
+            <div class="pilates_menu">
+            	<div class="pilates_menu_inner">
+              		 <ul class="pilats_ul"> 
+                 <li class="pilates_li pilates_li1"> 
+                 <a class="pilates_anchor common_home_bottom_anchor" href="javascript:void(0)"> 
+                 <span class ="pilates_common">
+                 	Pilates
+                 </span> 
+                 
+                 <span class="pilatesimg">
+                  <img src="assets/images/arrow_down.png"  alt="arrow" class="arrow_down"/>
+                 </span>
+                 </a> 
+                 
+                 <div class="fadewrapper fadewrapperfirst">
+                 <div class="fadewrapperinner">
+                   <h2> What is Pilates? </h2>
+                   <p> “I must be right. Never an aspirin. Never injured a day in my life. The whole country, the whole world, should be doing my exercises. They’d be happier” <span class="popup_blue_span"> Joseph Pilates </span></p>
+                   <p> The Pilates Method of exercise was developed by Joseph Pilates in the 1920s. It was originally used as a rehabilitation program for prisoners of war and was later found to be of great benefit to anyone seeking a higher level of fitness. </p>
+                                 <p> The work was kept alive over the years by a small group of Joseph Pilates devoted students until just a few years ago, when exercise science caught up to the principles that Pilates had been teaching all along, and now we enjoy the rich evolution of the Pilates work that we have today.</p>
+                                 
+                                 <p> Pilates is a form of exercise which emphasizes the balanced development of the body through  core strength, flexibility, and awareness in order to support efficient, graceful movement.</p>
+                                 
+                                    <p> Pilates is a form of exercise which emphasizes the balanced development of the body through  core strength, flexibility, and awareness in order to support efficient, graceful movement.</p>
+                                    
+                                       <p> The benefits of Pilates exercise that people report are that they become stronger, longer, leaner, and more able to do anything with grace and ease. All exercises are developed with modifications that can make a workout safe and challenging for a person at any level.</p>
+                                       
+                                       <p>  The Six Pilates Principles are Centering, Control, Flow, Breath, Precision, and Concentration. These six Pilates principles are essential ingredients in a high quality Pilates workout.</p>
+                                 
+                                     <p> Pilates exercises are done on either on a mat on the floor, Pilates mat work, or on exercise equipment developed by Joseph Pilates. </p>
+                         <p class="bottom_anchor_list">
+                         <span class=""> 
+                         <a href="pilates.html" class="pilates_button"> View Pilates Video <img src="assets/images/arrow_btn.png" alt="Test" /></a>
+                         </span>
+                        
+                         
+                          </p>
+                           
+                                                   </div>
+                                                 
+                 </div>
+                 
+                 </li>
+                 
+                 <li class="pilates_li pilates_li2"> 
+                 <a class="yoga_anchor common_home_bottom_anchor" href="javascript:void(0)"> 
+                 <span class ="pilates_common">
+                 	Yoga
+                 </span> 
+                 
+                  <span class="pilatesimg">
+                  <img src="assets/images/arrow_down.png"  alt="arrow" class="arrow_down"/>
+                 </span>
+                 
+                 </a> 
+                 
+                 <div class="fadewrapper fadewrappersecond">
+                 <div class="fadewrapperinner">
+                   <h2> What is Yoga? </h2>
+                   <p> “I must be right. Never an aspirin. Never injured a day in my life. The whole country, the whole world, should be doing my exercises. They’d be happier” <span class="popup_blue_span"> Joseph Pilates </span></p>
+                   <p> The Pilates Method of exercise was developed by Joseph Pilates in the 1920s. It was originally used as a rehabilitation program for prisoners of war and was later found to be of great benefit to anyone seeking a higher level of fitness. </p>
+                                 <p> The work was kept alive over the years by a small group of Joseph Pilates devoted students until just a few years ago, when exercise science caught up to the principles that Pilates had been teaching all along, and now we enjoy the rich evolution of the Pilates work that we have today.</p>
+                                 
+                                 <p> Pilates is a form of exercise which emphasizes the balanced development of the body through  core strength, flexibility, and awareness in order to support efficient, graceful movement.</p>
+                                 
+                                    <p> Pilates is a form of exercise which emphasizes the balanced development of the body through  core strength, flexibility, and awareness in order to support efficient, graceful movement.</p>
+                                    
+                                       <p> The benefits of Pilates exercise that people report are that they become stronger, longer, leaner, and more able to do anything with grace and ease. All exercises are developed with modifications that can make a workout safe and challenging for a person at any level.</p>
+                                       
+                                       <p>  The Six Pilates Principles are Centering, Control, Flow, Breath, Precision, and Concentration. These six Pilates principles are essential ingredients in a high quality Pilates workout.</p>
+                                 
+                                     <p> Pilates exercises are done on either on a mat on the floor, Pilates mat work, or on exercise equipment developed by Joseph Pilates. </p>
+                          <p class="bottom_anchor_list">
+                         <span class=""> 
+                         <a href="#" class="pilates_button"> View Pilates Video <img src="assets/images/arrow_btn.png" alt="Test" /></a>
+                         </span>
+                       
+                         
+                          </p>
+                           
+                                                   </div>
+                                                 
+                 </div>
+                 
+                 </li>
+                 
+                 <li class="pilates_li pilates_li3"> 
+                 <a class="body_anchor common_home_bottom_anchor" href="javascript:void(0)"> 
+                 <span class ="pilates_common">
+                 	Body Tonning
+                 </span> 
+                  <span class="pilatesimg">
+                  <img src="assets/images/arrow_down.png"  alt="arrow" class="arrow_down"/>
+                 </span>
+                 </a> 
+                 
+                 <div class="fadewrapper fadewrapperthird">
+                 <div class="fadewrapperinner">
+                   <h2> What is Body Tonning? </h2>
+                   <p> “I must be right. Never an aspirin. Never injured a day in my life. The whole country, the whole world, should be doing my exercises. They’d be happier” <span class="popup_blue_span"> Joseph Pilates </span></p>
+                   <p> The Pilates Method of exercise was developed by Joseph Pilates in the 1920s. It was originally used as a rehabilitation program for prisoners of war and was later found to be of great benefit to anyone seeking a higher level of fitness. </p>
+                                 <p> The work was kept alive over the years by a small group of Joseph Pilates devoted students until just a few years ago, when exercise science caught up to the principles that Pilates had been teaching all along, and now we enjoy the rich evolution of the Pilates work that we have today.</p>
+                                 
+                                 <p> Pilates is a form of exercise which emphasizes the balanced development of the body through  core strength, flexibility, and awareness in order to support efficient, graceful movement.</p>
+                                 
+                                    <p> Pilates is a form of exercise which emphasizes the balanced development of the body through  core strength, flexibility, and awareness in order to support efficient, graceful movement.</p>
+                                    
+                                       <p> The benefits of Pilates exercise that people report are that they become stronger, longer, leaner, and more able to do anything with grace and ease. All exercises are developed with modifications that can make a workout safe and challenging for a person at any level.</p>
+                                       
+                                       <p>  The Six Pilates Principles are Centering, Control, Flow, Breath, Precision, and Concentration. These six Pilates principles are essential ingredients in a high quality Pilates workout.</p>
+                                 
+                                     <p> Pilates exercises are done on either on a mat on the floor, Pilates mat work, or on exercise equipment developed by Joseph Pilates. </p>
+                          <p class="bottom_anchor_list">
+                         <span class=""> 
+                         <a href="#" class="pilates_button"> View Pilates Video <img src="assets/images/arrow_btn.png" alt="Test" /></a>
+                         </span>
+                       
+                         
+                          </p>
+                           
+                                                   </div>
+                                                 
+                 </div>
+                 </li>
+                 
+                 <li class="pilates_li pilates_li4"> 
+                 <a class="prenatal_anchor common_home_bottom_anchor" href="javascript:void(0)"> 
+                 <span class ="pilates_common">
+                 	Pre natal
+                 </span>
+                  <span class="pilatesimg">
+                  <img src="assets/images/arrow_down.png"  alt="arrow" class="arrow_down"/>
+                 </span> 
+                 </a> 
+                 <div class="fadewrapper fadewrapperfour">
+                 <div class="fadewrapperinner">
+                   <h2> What is Pre natal? </h2>
+                   <p> “I must be right. Never an aspirin. Never injured a day in my life. The whole country, the whole world, should be doing my exercises. They’d be happier” <span class="popup_blue_span"> Joseph Pilates </span></p>
+                   <p> The Pilates Method of exercise was developed by Joseph Pilates in the 1920s. It was originally used as a rehabilitation program for prisoners of war and was later found to be of great benefit to anyone seeking a higher level of fitness. </p>
+                                 <p> The work was kept alive over the years by a small group of Joseph Pilates devoted students until just a few years ago, when exercise science caught up to the principles that Pilates had been teaching all along, and now we enjoy the rich evolution of the Pilates work that we have today.</p>
+                                 
+                                 <p> Pilates is a form of exercise which emphasizes the balanced development of the body through  core strength, flexibility, and awareness in order to support efficient, graceful movement.</p>
+                                 
+                                    <p> Pilates is a form of exercise which emphasizes the balanced development of the body through  core strength, flexibility, and awareness in order to support efficient, graceful movement.</p>
+                                    
+                                       <p> The benefits of Pilates exercise that people report are that they become stronger, longer, leaner, and more able to do anything with grace and ease. All exercises are developed with modifications that can make a workout safe and challenging for a person at any level.</p>
+                                       
+                                       <p>  The Six Pilates Principles are Centering, Control, Flow, Breath, Precision, and Concentration. These six Pilates principles are essential ingredients in a high quality Pilates workout.</p>
+                                 
+                                     <p> Pilates exercises are done on either on a mat on the floor, Pilates mat work, or on exercise equipment developed by Joseph Pilates. </p>
+                          <p class="bottom_anchor_list">
+                         <span class=""> 
+                         <a href="#" class="pilates_button"> View Pilates Video <img src="assets/images/arrow_btn.png" alt="Test" /></a>
+                         </span>
+                       
+                       
+                         
+                          </p>
+                           </div>
+                                                 
+                 </div>
+                 </li>
+                                                   
+               
+               </ul>    
+                </div> 
+             </div>
+        	</div>
+        
+        	</div>
+
+		<!--<div class="mainContent_wrapper">
+        	<div class="main-wrapper-fixed ">
+            
+            
+            </div>
+        </div> --><!--mainContent ends here-->
+        
+        <div class="footer_wrapper">
+        	<div class="main-wrapper-fixed footer_wrap">
+             
+             <div class="footerright">
+             	<div>
+                  <span class="faceb footersoci"><a title="facebook" href="#"> f</a></span>
+                  <span class="twittr footersoci"><a href="#" title="twitter"> t</a></span>
+                  <span class="googleplus footersoci"><a href="#" title="googleplus"> g</a></span>
+                  <span class="socilmed footersoci"><a href="#" title="forum"> s</a></span>
+                  
+                  <span class="calll footersoci"><a href="#" title="call"> ca</a></span>
+                </div>
+             </div>
+             
+             <div class="footerleft">
+             	<div class="copyrights">&copy; Copyright 2013, Lilyfit , All Rights Reserved. </div>
+                <div class="poweredby"> <a target="_blank" href="http://colorcuboid.com/">Powered by <img src="assets/images/colorcuboid_logo.png" alt="Slider image">&nbsp;ColorCuboid Designs</a> </div>
+             </div>
+            
+            </div>
+        </div><!--footer ends here-->
+        
+    </div>	<!--bodyWrapper ends here-->
+    
+
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>
+<script type="text/javascript" src='assets/scripts/script.js'></script>
+<script type="text/javascript" src='assets/scripts/jquery.capSlide.js'></script>
+<script type="text/javascript" src='assets/scripts/menucaption_call.js'></script>
+
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation           
+			$.fn.slider();
+        })
+    //]]>
+</script>
+<script type="text/javascript" src='assets/scripts/jquery.fractionslider.js'></script>
+
+<!-- scroller implementation for popup -->
+
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<!-- scroller implementation for popup -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	
+	$('.fadewrapperinner').mCustomScrollbar({
+		scrollButtons:{
+			enable:true
+		},
+		advanced:{
+			updateOnContentResize: true,
+			updateOnBrowserResize: true
+		}
+	 });	
+	 
+
+
+	var window_widhths = $(window).width() + 17;
+
+	if(window_widhths > 1023)
+	{
+	$('.pilates_li').mouseenter(function(){		
+		var pilats_ul_pos = ($('.pilats_ul').offset().top) - ($(window).scrollTop()) - 200;		
+		$(this).find('.fadewrapperinner').height(pilats_ul_pos);
+	});
+	}
+	if(window_widhths > 1023)
+	{
+	$(window).scroll(function(){	
+		$('.pilates_li').mouseenter(function(){		
+			var pilats_ul_pos = ($('.pilats_ul').offset().top) - ($(window).scrollTop()) - 200;	
+			
+			var pilats_ul_pos2 = ($('.menu_ulist').offset().top) + ($('.menu_ulist').outerHeight(true)) - 200;	
+			
+				
+			$(this).find('.fadewrapperinner').height(pilats_ul_pos);
+		});
+		
+		
+		
+	});
+	}
+	
+	
+	
+
+
+$(".menuu1").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu2").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu3").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu4").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu5").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu6").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".menuu7").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+$(".shopmenu").css("animation","fx_caption_top "+ 1000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+$(".login_signup").css("animation","fx_caption_right "+ 2000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+
+$(".pilates_li1").css("animation","fx_caption_left "+ 4000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+$(".pilates_li2").css("animation","fx_caption_left "+ 2000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+$(".pilates_li3").css("animation","fx_caption_right "+ 3000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+$(".pilates_li4").css("animation","fx_caption_right "+ 4000 +"ms 1 cubic-bezier(.17,.89,.26,1)");
+
+
+
+
+/* for home page background slider **/
+		$.fn.slider = function(){
+
+			$('.slider').fractionSlider({
+				'autoChange':           true,
+				'fullWidth':            true,
+				'controls':             false, 
+				'pager':                false,
+				'responsive':           true,
+				'dimensions':           "1200,934",
+				'increase':             false,
+				'pauseOnHover':         false
+
+			});
+		}
+
+
+
+/****** for home page mouseover fadin **/
+	var window_widhths = $(window).width() + 17;
+
+	if(window_widhths > 1023)
+	{
+
+		$('.pilates_li').mouseenter(function(){
+
+		var elemm = $(this).find('.fadewrapper');
+		$('.fadewrapper').fadeOut();
+
+		if(elemm.is(":visible"))
+		{
+			elemm.hide();
+		}
+		else
+		{
+			elemm.stop(true, true).slideDown(1000)
+			$(this).children().find('.arrow_down').fadeIn();
+		}
+
+ 	 });  
+	   $('.pilates_li').mouseleave(function(){
+		   var elemm = $(this).parent().find('.fadewrapper');
+		   $(this).children().find('.arrow_down').css("display","none");
+			elemm.hide();
+	  });
+	  
+	}
+	 
+  
+
+    });
+</script>
+
+<style>
+ .slider-outer-wrap,body
+ {
+ background-color:#DCDFD8;
+ /*background-image: url("assets/images/bg.jpg");
+    background-position: center center;*/
+
+ }
+</style>
+	</body>
+</html>
+
+
+

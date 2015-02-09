@@ -1,0 +1,101 @@
+.aboutcarosl .mask
+{
+	 margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 1184px;
+	
+}
+
+.meet_our_team_slider .carousel .disabled {
+color:gray;
+cursor:default;
+}
+                
+
+.no-js .carousel ul {position:static;}
+
+
+
+.meet_our_team_slider .carousel ul li {
+     float: left;
+    height: 355px;
+    margin: 0;
+    text-align: left;
+    width: 231px;
+}
+.slide_about {
+    background: url("../images/instructors_bg.jpg") no-repeat scroll center bottom #F0F0F0;
+    margin-right: 22px !important;
+    padding-bottom: 17px;
+    padding-left: 34px !important;
+    padding-right: 10px !important;
+    padding-top: 20px !important;
+}
+.slide_about img{
+	margin-left:-15px;
+	margin-bottom:10px;
+}
+.meet_our_team_slider .carousel ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+
+
+.meet_our_team_slider .carousel .prev_carosel
+ {
+	 background: url("../images/arrow-left.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 54px;
+    left: 0px;
+    position: absolute;
+    top: 36%;
+    width: 54px;
+    z-index: 100;
+ }
+ 
+ .meet_our_team_slider .carousel .next_carosel
+ {
+	background: url("../images/arrow-right.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 54px;
+    position: absolute;
+    right: 0px;
+    top: 35%;
+    width: 54px;
+    z-index: 100;
+ }
+ 
+ .meet_our_team_slider .aboutcarosl
+ {
+	 position:relative;
+	/* overflow:hidden;*/
+ }
+ 
+
+
+
+.text_slide_about h3
+{
+    color:#333;
+    font-size:19px;
+    text-transform:uppercase;
+    font-weight:bold;
+   /* margin-top:10px;
+    margin-bottom:10px;*/
+    text-align:center;
+}
+			
+.text_slide_about p
+{
+    color: #333333;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}

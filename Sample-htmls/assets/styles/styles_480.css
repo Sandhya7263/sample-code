@@ -1,0 +1,588 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+@media (max-width: 600px) {
+	
+		.pilates_instructorrslider .carousel ul li
+		{
+		text-align:center;
+		}
+		.text_instructors h3,.text_instructors .readmoree
+		{
+		float:none;
+		text-align:center;
+		}
+	.header_wrapper
+	{
+		background: #fff url("../images/bgimage_480.jpg") no-repeat center top;
+		width:100%;
+		height:640px;
+		background-size:cover;
+		
+	}
+	
+	.header_wrapper_inside
+	{
+		height:auto !important;
+		background:#fff;
+	}
+	
+	.pilates_innermenu
+	{
+		width:50%;
+		text-align:center;
+		margin-bottom:23px;
+	}
+	
+	.retreats_box
+	{
+		padding-bottom:5.7%;
+	}
+
+	.responsive-slider .slides ul li .slide-body .caption.header
+	{
+		top:15%;
+		width:40%;
+		
+	}
+	.responsive-slider .slides ul li .slide-body .caption.sub
+	{
+		font-size:13px;
+		bottom:-44px;
+	}
+	.responsive-slider .slides ul li .slide-body .caption.header h2
+	{
+		font-size:14px;
+		white-space:normal !important;
+	}
+	.responsive-slider .slides ul li .slide-body .caption.sub
+	{
+		width:100%;
+		white-space:normal !important;
+	}
+	
+	
+}
+
+
+
+@media (max-width: 320px) {
+	
+	.header_wrapper
+	{
+		background:#fff url("../images/bgimage_320.jpg") no-repeat center top;
+		width:100%;
+		height:672px;
+	}
+	.header_wrapper_inside
+	{
+		height:auto !important;
+		background:#fff;
+	}
+	
+	.pilates_innermenu
+	{
+		width:100%;
+		text-align:center;
+		margin-bottom:23px;
+	}
+	.retreats_box_inner
+	{
+		padding:20px 10px 20px 15px
+	}
+	.header,.caption
+	{
+		display:none;
+	}
+	
+	
+}
+
+/*** Hom page **/
+
+.mask ul li
+{
+	background-size:contain;
+	padding-bottom:43px;
+	text-align:centyer;
+	float:none;
+}
+.navi-menu
+{
+	margin-top:0px !important;
+}
+
+/******* about us page **/
+
+.loginsignupclass
+{
+	width:100px;
+}
+
+/* instructors page **/
+
+.pilates_instructorrslider li.slide img {
+    height: 63%;
+    text-align: center;
+    width: 40%;
+}
+
+.pilates_instructorrslider LI
+{
+	padding: 20px 0 18px !important;
+	margin-left:0px;
+}
+
+.instructor_left_list li
+{
+	padding-left:10px !important;
+}
+
+
+	
+.mask,.mask ul
+{
+	width:100% !important;
+}
+
+
+.carousel ul li
+{
+	width:100%;
+}
+
+.prev_carosel,.next_carosel
+{
+	display:none !important;
+}
+
+.carousel ul li
+{
+	margin-bottom:10px;
+	text-align:center;
+}
+/* retreats page **/
+.retreats_box
+{
+	width:100%;
+}
+.retreats_content_right
+{
+	float:right;
+	width:49%;
+}
+.retreats_content_right
+{
+	width:100%;
+	float:left;
+}
+/* retreats page **/
+.slider-wrapper
+	{
+		background:url("../images/bgimage_320.jpg") no-repeat center top;
+		width:100%;
+		height:100%;
+	}
+	
+.retreats_pilates_menu
+{
+	width:100%;
+}
+
+
+
+
+
+.fadewrapper 
+{
+	display:block !important;
+	position:static;
+	
+}
+
+.fadewrapperinner
+{
+	background:none;
+	width:96%;
+	padding:0 2%;
+	float:left;
+}
+.header-submenu-wrap {
+	display: none !important;
+}
+
+.pilates_anchor {
+    background: url("../images/pilates.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+}
+.showonlyonmob
+{
+	display:block;
+	width:100%;
+	text-align:center;
+	margin-bottom:25px;
+	margin-top:25px;
+	margin-top:25px;
+}
+.menutoggle {
+	 background: none repeat scroll 0 0 #1172B5;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 3%;
+    text-align: center;
+    width: 95%;
+}
+
+.login_signup
+{
+	 
+    margin: 0 auto 10px;
+   
+    position: static;   
+    width: 206px;
+}
+
+.login_button {
+    
+     border: 0px solid #008000;
+    float: left;
+    position: static;
+    right: 0;
+    top: 0;
+    width: 100px;
+	
+}
+
+.signup_button {
+    border: 0px solid #0000FF;
+    display: block !important;
+    float: left;
+    margin-left: 2px;
+    margin-top: 0;
+    position: static;
+    top: 0;
+}
+
+.logomenu
+{
+	display:none;
+}
+.floatleftt
+{
+	margin-right: 10px;
+    margin-top: 10px;
+    padding: 0;
+    width: 99%;
+}
+.menu_ulist {
+	display: none;
+}
+.menu_ulist {
+	margin-top: 0px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.menu_ulist li {
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+}
+.menu_ulist li a {
+	float: none;
+	padding: 5px 0px;
+	margin: auto;
+	display: inline-block;
+	width: 100%;
+}
+.footerleft {
+   /* bottom: -28px;
+    position: relative;*/
+    text-align: center;
+    width: 100%;
+	float:right;
+}
+.footerright
+{
+	 display: table;
+    float: none !important;
+    margin: 0 auto 10px;
+    text-align: center;
+    width: auto;
+}
+.responisve-container
+{
+display:none;
+}
+
+
+.pilates_menu {
+    padding: 0;
+    position: static;
+    top: 10%;
+    width: 100%;
+}
+.pilates_li
+{
+	margin:0px;
+}
+
+.pilates_menu_inner {
+    float: right;
+    text-align: center;
+    width: 100%;
+}
+.fadewrapper p.bottom_anchor_list
+{
+	float:left;
+	text-align:center;
+	width:100%;
+}
+
+.onlymobile_insteadslider
+{
+	display:block;
+	
+}
+.onlymobile_insteadslider img
+{
+	width:98%;
+}
+
+.login_span
+{
+	float:right;
+}
+.footerright {
+    /*bottom: 100px;
+    margin: 0 auto -50px;
+    position: relative;
+    text-align: center;
+    width: 100%;*/
+}
+
+.videos_all
+{
+	display:block;
+	width:100%;
+	text-align:center;
+}
+.videos_all_inner
+{
+	width:auto;
+	text-align:center;height:auto;
+	float:none;
+}
+#carousel
+{
+	display:none;
+}
+.navigation_paretrelative
+{
+	display:none;
+}
+.filter_ul li a
+{
+	width:99%;
+}
+
+.filter_div_inner
+{
+	width:95%;
+}
+
+.filterinsid
+{
+	width:95%;
+	text-align:center;
+}
+.login_box_inner
+{
+	 clear: both;
+    float: left;
+  /*  margin-left: 1% !important;
+		  margin-right: 1% !important;*/
+    padding: 14px;
+    width: 90%;
+	
+}
+
+.signup_box_inner
+{
+	clear: both;
+    float: left;
+    padding: 0 1%;
+    width: 98%;
+	top:10px !important;
+	
+
+}
+
+
+.common_textbox_small1
+
+{
+	margin-left:10% !important
+}
+.checkboxx {
+    height: 55px !important;
+	font-size:10px;
+}
+
+.signup_inner_relative
+{
+
+ float: left;
+    padding: 5px 13px;
+    width: 83%;
+	
+}
+
+.signup_div  .signup_shadow
+{
+width:100%;
+}
+
+.login_inner_relative
+{
+	width:100%;
+	padding:0px;
+}
+
+.login_shadow
+{
+	width:100%;
+}
+
+.aboutcarosl .mask
+{
+	width:100% !important;
+}
+
+.aboutcarosl .mask ul
+{
+	width:100% !important;
+}
+.meet_our_team_slider .carousel ul li
+{
+	width:100% !important;
+}
+
+
+
+.meet_our_team_slider .carousel ul li img
+{
+	width:auto;
+	height:auto;
+}
+
+.who_we_are
+{
+	width:100%;
+}
+.who_we_are_left
+{
+	width:90%;
+	float:left;
+	clear:both;
+	padding:0 3%;
+}
+
+.who_we_are_right
+{
+	width:90%;
+	float:left;
+	clear:both;
+	margin-right:0px;
+}
+
+.who_we_are_right img
+{
+	width:100%;
+	height:100%;
+}
+.mask li
+{
+	margin-bottom:10px !important;
+}
+
+.prev_carosel,.next_carosel
+{
+display:none;
+}
+
+.text_slide_about p,.text_slide_about h3
+{
+text-align:left;
+}
+
+.pilates_instructorrslider  li.slide 
+	{
+	width:100% !important;
+	float:left;
+	margin-bottom:10px;
+	height:auto;
+	}
+
+/** retreats detail page **/
+.retreat_details_left
+{
+	width:95%;
+	padding:0 2%;
+	margin-bottom:10px;
+	
+}
+
+.retreat_details_right
+{
+  width:100%;
+  width:95%;
+ padding:0 2%;
+ margin-left:0px !important;
+}
+
+.who_we_are_text, .who_we_are_list
+{
+	font-size:13px;
+}
+
+.retreat_details_down_listmain
+{
+width:50%;
+float:left;
+}
+
+.retreat_details_down_listmain
+{
+	width:50%;
+	float:left;
+	clear:both;
+}
+.retreat_details_booknow
+{
+	width:100%;
+	float:left;
+	clear:both;
+}
+.retreat_details_booknow_image
+{
+	float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+/*********** instructor details page ***/
+
+.instructor_left
+{
+	width:100%;
+}
+
+.instructor_right
+{
+	width:100%;
+}
+
+

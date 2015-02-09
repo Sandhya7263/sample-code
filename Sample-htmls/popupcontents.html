@@ -1,0 +1,165 @@
+<!-- for video css -->
+ <link href="assets/styles/video-js.css" rel="stylesheet" type="text/css">
+ <!-- for video css -->
+ 
+ 
+ <!-- for raty css -->
+<link rel="stylesheet" type="text/css" href="assets/styles/raty.css"/>
+<!-- for raty css -->
+ 
+ 
+<!-- for html5 videos -->
+
+<script src="assets/scripts/video.js"></script>
+<script type="text/javascript">
+    videojs.options.flash.swf = "assets/scripts/video-js.swf";
+  </script>
+  
+  <script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.raty.js"></script>
+  
+  <script type="text/javascript">
+ $(document).ready(function(){
+	
+	$('#default_raty').raty();
+	$('#default_raty2').raty();
+	$('#default_raty3').raty();
+	$('#default_raty4').raty();
+	$('#default_raty5').raty();
+	$('#default_raty6').raty();
+});
+</script>
+
+<script type="text/javascript">
+    $(function(){ 
+       // var pageID = <?php echo $pageID;  ?>; 
+
+        $('.like-btn').click(function(){
+            $('.dislike-btn').removeClass('dislike-h');    
+            $(this).addClass('like-h');
+            $.ajax({
+                type:"POST",
+                url:"ajax.php",
+                data:'act=like&pageID='+pageID,
+                success: function(){
+                }
+            });
+        });
+        $('.dislike-btn').click(function(){
+            $('.like-btn').removeClass('like-h');
+            $(this).addClass('dislike-h');
+           $.ajax({
+                type:"POST",
+                url:"ajax.php",
+                data:'act=dislike&pageID='+pageID,
+                success: function(){
+                }
+            });
+        });
+        $('.share-btn').click(function(){
+            $('.share-cnt').toggle();
+        });
+    });
+</script>
+
+  
+<!-- for html5 videos -->
+
+
+
+        		<div class="popup_main_container">
+                            <div class="popup_close_bar">
+                           		<span class="close_class_popup">&nbsp;</span>
+                            </div>
+                            <div class="innercontent_popup">
+                            <div class="iframediv">
+                                      
+               <video width="700" height="360" id="popup_video" class="video-js vjs-default-skin" controls preload="none" 
+              poster="assets/images/pilates_pop+image.jpg"
+              data-setup="{}" >
+          
+            	<source src="assets/videos/big_buck_bunny.webm" type='video/webm' />                  
+          </video>
+                             </div>
+                             
+                             <div class="title_divv" style="float:left;width:100%;margin-top:10px;"> 
+                             	<div style="float:left;" class="rating_div">
+								<h2>     Pilates</h2>
+                                    <div id="default_raty" > </div> 
+                                </div>
+                             
+                              	
+                                
+                                <div class="tab-tr"  style="float:right">
+                                 <div style="float:left;" class="leave_commentss">
+								<img src="assets/images/leave_comments.jpg" />
+                                </div>
+                                
+                                    <div class="like-btn">Like</div>
+                                    <div class="dislike-btn "></div>
+                        
+                                </div><!-- /tab-tr -->
+                                
+                                <div> 
+                                                        
+                               
+                                
+                                </div>                          
+                             </div>
+                             <div class="description_divv">
+                              The Pilates Method of exercise was developed by Joseph Pilates in the 1920s. It was originally used as a rehabilitation program for prisoners of war and was later found to be of great benefit to anyone seeking a higher level of fitness. The work was kept alive over the years by a small group of Joseph Pilates devoted students until just a few years ago, when evolution of the Pilates work that we have today.
+                             </div>
+                             
+                             <div class="duration_details">
+                             	<div class="durationn">
+                             	<span class="leftspann">Durations  </span>
+                                <span class="rightspann">: &nbsp;&nbsp; 2:41 </span>
+                                </div>
+                                <div class="durationn">
+                             	<span class="leftspann">Levels  </span>
+                                <span class="rightspann">: &nbsp;&nbsp; 3 </span>
+                                </div>
+                                <div class="durationn">
+                             	<span class="leftspann">Style  </span>
+                                <span class="rightspann">: &nbsp;&nbsp; new Pilates </span>
+                                </div>
+                                <div class="durationn">
+                             	<span class="leftspann">Instructors  </span>
+                                <span class="rightspann">: &nbsp;&nbsp; Pehr Henrik Ling </span>
+                                </div>
+                             </div>
+                            </div>
+                            </div>
+                       		 
+
+ 
+<script type="text/javascript" src='assets/scripts/jquery-1.9.1.min.js'></script>	
+       
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.raty.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	window_height = $(window).height();
+	window_height = window_height -200; 
+	$('.popup_main_container').css("height",window_height);
+	$('.popup_main_container').css("top","100px");
+	
+	
+	var popcontentheight = window_height - 40;
+	$('.innercontent_popup').css("height",popcontentheight);
+	
+	$('.innercontent_popup').mCustomScrollbar({
+	scrollButtons:{
+		enable:true
+	},
+	advanced:{
+        updateOnContentResize: true,
+		updateOnBrowserResize: true
+    }
+});
+
+})
+</script>
