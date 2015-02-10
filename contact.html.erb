@@ -1,0 +1,256 @@
+<head>
+  <title>LilyFit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag  "application", "animation", "style_menumouseover" ,"jquery.mCustomScrollbar", "colorbox", "jquery.selectbox", :media => "all" %>
+  <%=stylesheet_link_tag  "styles_1200", :media => "only screen and (max-width: 1200px)" %>
+  <%=stylesheet_link_tag  "styles_1024", :media => "only screen and (max-width: 1024px)" %>
+  <%=stylesheet_link_tag  "styles_600", :media => "only screen and (max-width: 600px)" %>
+  <%=stylesheet_link_tag  "styles_600", :media => "only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) and (max-resolution: 119.9dpi)" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body >
+  <div class="main-wrapper">
+    <div class="slider-outer-wrap loginpage_background contactpage_background">
+      <div class="slider-wrapper">
+        <div class="header_wrapper header_wrapper_transparentbg">
+          <div class="main-wrapper-fixed headerdiv">
+            <div class="header-left floatleft showonlyonmob">
+              <a href="<%= home_index_path %>">
+              <%= image_tag("lilyfit_logo.png"), :title => "LILYFIT", :alt=>"Logo LILYFIT", :id=>"logo" %>
+              </a>
+            </div>
+            <div class="login_signup">
+              <div class="login_button">
+                <span class="login_span">
+                  <a  href="login.html" class="login_button_anchor loginsignupclass changelogintext">
+                    Log In
+                  </a>
+                </span>
+              </div>
+              <% if !current_user %>
+                <div class="signup_button" style="display:none;">
+                  <span class="signup_span">
+                   <%= link_to "Sign Up", new_user_registration_path, :class => "login_button_anchor loginsignupclass" %>
+                      Sign Up
+                    </a></span>
+                </div>
+              <% end %>
+            </div>
+            <div class="floatleftt">
+              <% if current_user %>
+                <ul class="myaccount_menu_top_header myaccount_menu_top_header_white">
+                  <li class="first_li_welcome">
+                    <p>Welcome ! <%= current_user.first_name+" "+current_user.last_name %></p>
+                  </li>
+                  <li><a href="javascript:void(0)">My account</a>
+                    <ul>
+                      <li>
+                      <%= link_to "My Account", my_account_users_path %>
+                      </li>
+                      <li>
+                        <%= link_to "Edit My Account", edit_my_account_users_path %>
+                      </li>
+                      <li>
+                       <%= link_to "My History", my_history_users_path %>
+                      </li>
+                      <li>
+                      <%= link_to "Payment Settings & Info", payment_settings_user_path(current_user.id) %>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              <% end %>
+              <div class="menu_top header-left">
+                <div class="menutoggle"> MENU </div>
+                <ul class="menu_ulist menu_ulist_login_signup">
+                  <li class="menuu1 navi-menu paddinganchor">
+                  <%= link_to "About", aboutus_path %>
+                  </li>
+                  <li class="menuu2 navi-menu paddinganchor classesmenu"><a href="javascript:void(0)"> <span>Videos </span> </a>
+                    <div class="header-submenu-wrap">
+                      <div class="header-submenu-wrapinside">
+                        <div class="demo">
+                          <div id="capslide_img_cont1" class="ic_container">
+                           <%= image_tag("classes_dropdown_02.png"), :alt=>"" ,  :width=>"180",  :height=>"240"%>
+                            <div class="overlay" style="display:none;"></div>
+                            <div class="ic_caption">
+                              <h3>PILATES</h3>
+                              <div class="ic_text color1">
+                                <ul class="mouse_over_drop_ul">
+                                  <% if pilates_styles? %>
+                                    <% Style.all(:conditions => [" class_type_id = '#{ClassType.find_by_name('Pilates').id}'"]).each do |p_s| %>
+                                      <li> <a href="<%= pilate_classes_path(:style => p_s.id) %>"><%= p_s.name %> </a></li>
+                                    <% end %>
+                                  <% end %>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="demo">
+                          <div id="capslide_img_cont2" class="ic_container">
+                          <%= image_tag("classes_dropdown_05.png"), :alt=>"" ,  :width=>"180",  :height=>"240"%>
+                            <div class="overlay" style="display:none;"></div>
+                            <div class="ic_caption">
+                              <h3>YOGA</h3>
+                              <div class="ic_text color1">
+                                <ul class="mouse_over_drop_ul">
+                                  <% if yoga_styles? %>
+                                    <% Style.all(:conditions => [" class_type_id = '#{ClassType.find_by_name('Yoga').id}'"]).each do |y_s| %>
+                                      <li> <a href="<%= yoga_classes_path(:style => y_s.id) %>"> <%= y_s.name %></a></li>
+                                    <% end %>
+                                  <% end %>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="demo">
+                          <div id="capslide_img_cont3" class="ic_container">
+                          <%= image_tag("classes_dropdown_07.png"), :alt=>"" ,  :width=>"180",  :height=>"240"%>
+                            <div class="overlay" style="display:none;"></div>
+                            <div class="ic_caption">
+                              <h3>BODY TONING  <br/> & DANCE</h3>
+                              <div class="ic_text color1">
+                                <ul class="mouse_over_drop_ul">
+                                  <% if body_toning_styles? %>
+                                    <% Style.all(:conditions => [" class_type_id = '#{ClassType.find_by_name('Body Toning & Dance').id}' "]).each do |b_s| %>
+                                      <li> <a href="<%= body_toning_classes_path(:style => b_s.id) %>"><%= b_s.name %></a></li>
+                                    <% end %>
+                                  <% end %>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="demo">
+                          <div id="capslide_img_cont4" class="ic_container">
+                          <%= image_tag("classes_dropdown_09.png"), :alt=>"" ,  :width=>"180",  :height=>"240"%>
+                            <div class="overlay" style="display:none;"></div>
+                            <div class="ic_caption">
+                              <h3>PRENATAL</h3>
+                              <div class="ic_text color1">
+                                <ul class="mouse_over_drop_ul">
+                                  <% if pre_natal_styles? %>
+                                    <% Style.all(:conditions => [" class_type_id = '#{ClassType.find_by_name('Pre & Post Natal').id}'"]).each do |p_s| %>
+                                      <li><a href="<%= pre_natal_classes_path(:style => p_s.id) %>"><%= p_s.name %></a></li>
+                                    <% end  %>
+                                  <% end %>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menuu3 navi-menu paddinganchor">
+                  <%= link_to "Instructors", instructors_path %>
+                  </li>
+                  <li class="menuu4 navi-menu paddinganchor">
+                  <%= link_to "Blog", blogs_path %>
+                  </li>
+                  <li class="navi-menu logomenu ">
+                  <%= link_to "Home", home_index_path %>
+                  </li>
+                  <li class="menuu5 navi-menu paddinganchor">
+                  <%= link_to "Webinars", workshops_path %>
+                  </li>
+                  <li class="menuu6 navi-menu paddinganchor">
+                  <%= link_to "Retreats", retreats_path %>
+                   </li>
+                  <li class="menuu7 navi-menu paddinganchor ">
+                  <%= link_to "Nutrition", nutritionists_path %>
+                  </li>
+                  <% if current_user %>
+                    <li class="shopmenu navi-menu paddinganchor menulast"><%= link_to "LOG OUT", destroy_user_session_path, :method => :delete, :class=>"" %></li>
+                  <%else%>
+                    <li class="shopmenu navi-menu paddinganchor menulast">
+                    <%= link_to "Log In", new_user_session_path %>
+                    </li>
+                  <%end%>
+                  <div class="class_dropdown_mobile_slider">
+                      <%= image_tag("close_popup.png"), :alt=>"close" %>
+                    <h3>PILATES</h3>
+                    <ul>
+                      <% if pilates_styles? %>
+                        <% Style.all(:conditions => [" class_type_id = '#{ClassType.find_by_name('Pilates').id}'"]).each do |p_s| %>
+                          <li> <a href="<%= pilate_classes_path(:style => p_s.id) %>"><%= p_s.name %> </a></li>
+                        <% end %>
+                      <% end %>
+                    </ul>
+                    <h3>YOGA</h3>
+                    <ul>
+                      <% if yoga_styles? %>
+                        <% Style.all(:conditions => [" class_type_id = '#{ClassType.find_by_name('Yoga').id}'"]).each do |y_s| %>
+                          <li>
+                          <%= link_to "#{y_s.name}", yoga_classes_path(:style => y_s.id) %>
+                          </li>
+                        <% end %>
+                      <% end %>
+                    </ul>
+                    <h3>BODY TONING  <br/> & DANCE</h3>
+                    <ul>
+                      <% if body_toning_styles? %>
+                        <% Style.all(:conditions => [" class_type_id = '#{ClassType.find_by_name('Body Toning & Dance').id}' "]).each do |b_s| %>
+                          <li>
+                          <%= link_to "#{b_s.name}", body_toning_classes_path(:style => b_s.id) %> 
+                          </li>
+                        <% end %>
+                      <% end %>
+                    </ul>
+                    <h3>PRENATAL</h3>
+                    <ul>
+                      <% if pre_natal_styles? %>
+                        <% Style.all(:conditions => [" class_type_id = '#{ClassType.find_by_name('Pre & Post Natal').id}'"]).each do |p_s| %>
+                          <li>
+                          <%= link_to "#{p_s.name}", pre_natal_classes_path(:style => p_s.id) %>
+                          </li>
+                        <% end  %>
+                      <% end %>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="login_div">
+        <div class="main-wrapper-fixed loginboxwidth">
+          <div class="login_shadow contact_shadow">
+            <div class="login_box_outer">
+              <div class="login_box_inner contact_page_content">
+                <div class="contact_page_content_left contact_page">
+                  <div class="contact_inner">
+                    <h2>ADDRESS</h2>
+                    <p class="address_div">Lilyfit,P.O.Box 123457,Dubai,UAE</p>
+                  </div>
+                  <div class="contact_inner">
+                    <h2>PHONE & FAX</h2>
+                    <p class="phone_div">+971 4 436 8888</p>
+                    <p class="fax_div">+971 4 436 8880</p>
+                  </div>
+                  <div class="contact_inner last_contact_inner">
+                    <h2>EMAILs</h2>
+                    <p class="mail_div"><a href="mailto:info@lilyfit.com" style="color:#000000; text-decoration:none;">info@lilyfit.com</a></p>
+                    <p class="mail_div"><a href="mailto:support@lilyfit.com" style="color:#000000; text-decoration:none;">support@lilyfit.com</a></p>
+                    <p class="mail_div"><a href="mailto:retreats@lilyfit.com" style="color:#000000; text-decoration:none;">retreats@lilyfit.com</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= render :partial => 'layouts/footer' %>
+    <div class="full_cover" style="display:none;"><div class="fs_loader">
+    <%= image_tag("fs.spinner.gif") %>
+    </div>
+    </div>  <!--bodyWrapper ends here-->
+    <%= javascript_include_tag "jquery-1.9.1.min", "jquery.capSlide", "menucaption_call", "jquery.mCustomScrollbar.concat.min"  %>
+</body>
+</html>
